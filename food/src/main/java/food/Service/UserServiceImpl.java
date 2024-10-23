@@ -1,5 +1,7 @@
 package food.Service;
 
+import java.util.List;
+
 import food.DAO.UserAuthDAO;
 import food.DAO.UserDAO;
 import food.DTO.User;
@@ -70,8 +72,30 @@ public class UserServiceImpl implements UserService{
 		// 로그인 성공
 		return selectedUser;
 	}
+
+	@Override
+	public int delete(User user) {
+		int result = 0;
+		try {
+			result = userDAO.delete(user.getUserId());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
 	
 	
+	@Override
+	public List<User> list() {
+		List<User> list = null;
+		try {
+			list = userDAO.list();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
 	
 	
 	

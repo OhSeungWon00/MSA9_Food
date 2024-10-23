@@ -38,7 +38,7 @@
     	
     	// 회원가입 성공
     	if (result>0){
-    		response.sendRedirect("signup.jsp");		// 메인화면으로 이동
+    		response.sendRedirect("login.jsp");		// 로그인페이지로 이동
     	}
     
     	// 회원가입 실패
