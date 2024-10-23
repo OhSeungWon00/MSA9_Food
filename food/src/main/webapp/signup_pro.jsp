@@ -6,14 +6,14 @@
 
     
     <% 
-    	String username = request.getParameter("username");
+    	String userId= request.getParameter("id");
     	String password = request.getParameter("password");
     	String name = request.getParameter("name");
     	String email = request.getParameter("email");
-    
+    	//id -> userId -> ueser_id
     
     	User user = User.builder()
-    							.userId(username)
+    							.user_id(userId)
     							.password(password)
     							.name(name)
     							.email(email)

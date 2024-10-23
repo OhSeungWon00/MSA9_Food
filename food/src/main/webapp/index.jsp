@@ -20,15 +20,28 @@
 	userService.signup(user);
 %>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<title>1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
 </head>
 <body>
+    <h2>회원가입</h2>
+    <form action="testt.jsp" method="post">
+        <label for="name">이름:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
+        <label for="email">이메일:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-<h1>3조성공</h1>
+        <label for="password">비밀번호:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
 
+        <label for="phone">전화번호:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <input type="submit" value="회원가입">
+    </form>
 </body>
 </html>
