@@ -1,6 +1,6 @@
-/* /* Figma Styles of your File */
+/* Figma Styles of your File */
 :root {
-  Colors
+  /* Colors */
   --material-theme-white: #ffffff;
   --material-theme-black: #000000;
   --material-theme-sys-light-primary: #65558f;
@@ -597,7 +597,7 @@
   --human-sys-dark-high-contrast-on-secondary-fixed: #000000;
   --human-sys-dark-high-contrast-secondary-fixed-dim: #d3c1ff;
 
-  Fonts
+  /* Fonts */
   --material-theme-display-large-font-family: Roboto-Regular, sans-serif;
   --material-theme-display-large-font-size: 57px;
   --material-theme-display-large-line-height: 64px;
@@ -674,5 +674,5 @@
   --material-theme-title-small-font-weight: 500;
   --material-theme-title-small-font-style: normal;
 
-  Effects
-} */
+  /* Effects */
+}

@@ -1,112 +1,62 @@
+<%@page import="food.DTO.User"%>
+<%@page import="food.Service.UserServiceImpl"%>
+<%@page import="food.Service.UserService"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/vars.css">
-  <link rel="stylesheet" href="./css/style.css">
-  
-  
-  <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       border: none;
-       text-decoration: none;
-       background: none;
-   
-       -webkit-font-smoothing: antialiased;
-   }
-   
-   menu, ol, ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-   }
-   </style>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+     * { margin: 0; padding: 0; box-sizing: border-box;} 
+    .c{
+    	display: flex;
+    	height: 20px;
+    }
+
+
+    
+    </style>
 </head>
 <body>
-  <div class="div">
-    <div class="main">
-      <img class="rectangle-31" src="./img/rectangle-310.svg" />
-      <div class="div2">회원가입</div>
-      <div class="div3">아이디</div>
-      <div class="div4">비밀번호</div>
-      <div class="div5">비밀번호 확인</div>
-      <div class="div6">이름</div>
-      <div class="div7">전화번호</div>
-      <div class="div8">이메일</div>
-      <div class="div9">생년월일</div>
-      <img class="div10" src="./img/div8.svg" />
-      <div class="div11" >  <div class="login-btnbox">
-        <a href="" class="login-btn">가입 완료</a>
+    <h2>회원가입</h2>
+    <form action="signup_pro.jsp" method="post">
+        <label for="name">이름:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="id">아이디:</label><br>
+        <input type="text" id="id" name="id" required><br><br>
         
-    </div></div>
-      <div class="rectangle-159"></div>
-      <div class="div12">  <input type="text" name="id" placeholder="아이디">
-        <span class="border"></span>
-      </div>
-      <div class="rectangle-1592"></div>
-      <div class="div13"> <input type="password" name="pw" placeholder="비밀번호">
-        <span class="border"></span></div>
-      <div class="rectangle-1593"></div>
-      <div class="div14"> <input type="password" name="pw" placeholder="비밀번호">
-        <span class="border"></span></div>
-      <div class="rectangle-1594"></div>
-      <div class="div15"> <input type="text" name="name" placeholder="이름"></div>
-      <div class="rectangle-1595"></div>
-      <div class="div16"> <input type="tel" name="num" placeholder="번호"></div>
-      <div class="rectangle-1596"></div>
-      <div class="div17"> <input type="email" name="mail" placeholder="이메일"></div>
-      <div class="rectangle-1597"></div>
-      <div class="div18"> <input type="date" name="birth" placeholder="생년월일"></div>
-      <div class="header">
-        <div class="container">
-          <div class="container2">  
-              </div>
-            </div>
-          </div>
-          <div class="navigation">
-            <div class="div20"> 
-          </div></div>
-            <div class="div21"> <div class="login-btnbox">
-           
-          </div></div>
-          </div>
+        <label for="email">이메일:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="password">비밀번호:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        
+        
+        <label for="password2">비밀번호 확인:</label><br>
+        <div class="c">
+        <input type="password" id="password2" name="password2" required> 
+	        <c:if test="${param.error == 0 }">
+			<p style="color: red;">비밀번호가 다릅니다</p>
+			</c:if>        
+        </div>
+		
        
-         
-      </div>
-      <img class="_2" src="./img/_20.png" />
-    </div>
-  </div>
-  
+		<br>	
+		<br>
+        <label for="phone">전화번호:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <input type="submit" value="회원가입">
+    </form>
 </body>
-
-<footer>
-  <br>
-  <div class="copy">
-    <p>copyright&copy; 2024 Team Food. All right reserved.</p>
-</div>
-</footer>
 </html>
-
-
-

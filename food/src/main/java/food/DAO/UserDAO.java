@@ -21,7 +21,7 @@ public class UserDAO extends BaseDAOImpl<User> {
 
 	@Override
 	public String pk() {
-		return "no";
+		return "user_id";
 	}
 
 	@Override

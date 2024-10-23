@@ -10,7 +10,7 @@
     	String password = request.getParameter("password");
     	String name = request.getParameter("name");
     	String email = request.getParameter("email");
-    	//id -> userId -> ueser_id
+    	//id -> userId -> user_id
     
     	User user = User.builder()
     							.user_id(userId)
