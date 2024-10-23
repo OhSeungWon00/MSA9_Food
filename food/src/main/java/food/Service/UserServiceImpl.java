@@ -22,15 +22,12 @@ public class UserServiceImpl implements UserService{
 		if(result == 0) {
 			return 0;
 		}
-		int authResult = 0;
-		UserAuth userAuth = new UserAuth();
-		userAuth.setUser_id(user.getUser_id());
-		userAuth.setAuth("ROLE_USER");
-		try {
-			authResult = userAuthDAO.insert(userAuth, "user_id", "auth");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return authResult;
+		/*
+		 * int authResult = 0; UserAuth userAuth = new UserAuth();
+		 * userAuth.setUser_id(user.getUser_id()); userAuth.setAuth("ROLE_USER"); try {
+		 * authResult = userAuthDAO.insert(userAuth, "user_id", "auth"); } catch
+		 * (Exception e) { e.printStackTrace(); }
+		 */
+		return result;
 	}
 }
