@@ -21,7 +21,7 @@
     
 
      	User user = User.builder()
-    							.user_id(userId)
+    							.userId(userId)
     							.password(password)
     							.name(name)
     							.email(email)
