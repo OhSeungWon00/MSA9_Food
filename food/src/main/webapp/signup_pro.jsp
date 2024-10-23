@@ -7,6 +7,9 @@
 
     
     <% 
+    	request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+    
     	String name = request.getParameter("name");
     	String userId= request.getParameter("id");
     	String email = request.getParameter("email");
@@ -14,6 +17,8 @@
     	String password2 = request.getParameter("password2");
     	String phone= request.getParameter("phone");
     	//id -> userId -> ueser_id
+    	
+    
 
      	User user = User.builder()
     							.user_id(userId)
@@ -24,8 +29,6 @@
     							.build();
     	
     	int result = 0;
-    	
-    	
     	// 회원 가입 요청 (비밀번호가 같고, ID가 중복되지 않은 경우)
     	if(password.equals(password2) ){
     	UserService userService = new UserServiceImpl();
@@ -41,7 +44,7 @@
     	// 회원가입 실패
     	else {
     		response.sendRedirect("index.jsp?error=0");	// 다시 회원가입페이지로(에러포함)
-    	} 
+    	}  
     %>
     
     
