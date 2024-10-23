@@ -4,6 +4,7 @@ import food.DAO.UserAuthDAO;
 import food.DAO.UserDAO;
 import food.DTO.User;
 import food.DTO.UserAuth;
+import food.utils.PasswordUtils;
 
 public class UserServiceImpl implements UserService{
 	
@@ -13,6 +14,11 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public int signup(User user) {
 		int result = 0;
+		
+		
+		String enecodedPassword = PasswordUtils.encoded(user.getPassword());
+		user.setPassword(enecodedPassword);
+		
 		
 		try {
 			result = userDAO.insert(user, "user_id", "password", "name", "email", "phone");

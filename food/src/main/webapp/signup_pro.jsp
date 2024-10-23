@@ -38,12 +38,12 @@
     	
     	// 회원가입 성공
     	if (result>0){
-    		response.sendRedirect("index.jsp");		// 메인화면으로 이동
+    		response.sendRedirect("signup.jsp");		// 메인화면으로 이동
     	}
     
     	// 회원가입 실패
     	else {
-    		response.sendRedirect("index.jsp?error=0");	// 다시 회원가입페이지로(에러포함)
+    		response.sendRedirect("signup.jsp?error=0");	// 다시 회원가입페이지로(에러포함)
     	}  
     %>
     
