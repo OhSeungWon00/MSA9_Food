@@ -1,5 +1,5 @@
 CREATE TABLE `Files` (
-  `file_id` BIGINT NOT NULL COMMENT 'PK',
+  `file_id` BIGINT	PRIMARY KEY NOT NULL COMMENT 'PK',
   `p_no` BIGINT NOT NULL COMMENT '부모PK',
   `file_type` ENUM('MAIN', 'SUB') NULL DEFAULT 'MAIN' COMMENT '파일종류 (MAIN:대표or썸네일,SUB:일반or하위)',
   `file_name` TEXT NOT NULL COMMENT '파일명',

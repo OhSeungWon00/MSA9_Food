@@ -70,22 +70,4 @@ public class UserServiceImpl implements UserService{
 		// 로그인 성공
 		return selectedUser;
 	}
-	
-	
-	
-	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

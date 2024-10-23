@@ -31,8 +31,4 @@ public class UserDAO extends BaseDAOImpl<User> {
 	
 	
 	
-	
-	
-	
-	
 }
