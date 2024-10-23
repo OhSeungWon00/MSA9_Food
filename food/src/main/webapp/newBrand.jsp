@@ -69,14 +69,13 @@
         <div class="rectangle-12"></div>
         <div class="_177-27"><input type="text" name="location" id="location"/></div>
       </div>
-      <img class="rectangle-16" src="./svg/rectangle-160.svg" />
       
       <div class="rectangle-13"></div>
       <div class="div8">전화번호</div>
       <div class="_032-5656-5656"><input type="text" name="phone" id="phone"></div>
       <div class="div7">매장설명</div>
       
-        <textarea class="_3" rows="5" cols="40" name = "content" id="content"></textarea>
+        <textarea class="_3" rows="5" cols="40" name = "content" id="content" style="background-color: white;"></textarea>
       
     </form>
     
