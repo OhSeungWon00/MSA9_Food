@@ -50,7 +50,8 @@
 	    <div class="rectangle-14"></div>
 	    <div class="rectangle-15"></div>
 	    <div class="div2">
-	    	<input type="file" name="file" multiple value="사진등록" />
+	    	<input type="file" name="file" multiple />
+	    	<input type="submit" value="사진등록" />
 	    </div>    
     </form>
   
@@ -62,7 +63,6 @@
       	<input class="new_btn" type="submit" value="매장등록"/>
       </div>
       	
-      <div class="div3">사진등록</div>
       
       
       <div class="div4">매장명</div>

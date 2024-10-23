@@ -42,7 +42,7 @@ public class CommonsFileUploadServlet extends HttpServlet {
 		}	// FileItem 타입의 파라미터 목록
 		
 		if( items == null ) {
-			out.print("<h1>파일 업로드 실패!</h1>");
+			
 		}
 		
 		Iterator<FileItem> params = items.iterator();			// 반복 객체
@@ -63,7 +63,7 @@ public class CommonsFileUploadServlet extends HttpServlet {
 				}
 			}
 		}
-		out.print("<h1>파일 업로드 성공!</h1>");
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
