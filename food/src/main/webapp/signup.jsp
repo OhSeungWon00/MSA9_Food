@@ -5,12 +5,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<<<<<<< HEAD
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-=======
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
->>>>>>> refs/heads/main
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -32,11 +27,8 @@
 <body>
     <h2>회원가입</h2>
     <form action="signup_pro.jsp" method="post">
-<<<<<<< HEAD
-=======
 
     
->>>>>>> refs/heads/main
         <label for="name">이름:</label><br>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -68,8 +60,4 @@
         <input type="submit" value="회원가입">
     </form>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> refs/heads/main

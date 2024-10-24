@@ -15,4 +15,3 @@ public class newBrand {
 	private String phone;
 	private String content;
 }
-

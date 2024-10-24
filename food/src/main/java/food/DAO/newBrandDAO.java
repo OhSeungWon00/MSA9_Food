@@ -17,7 +17,6 @@ public class newBrandDAO extends BaseDAOImpl<newBrand> {
 		return newbrand;
 	}
 
-
 	@Override
 	public String pk() {
 		return "name";
@@ -27,7 +26,5 @@ public class newBrandDAO extends BaseDAOImpl<newBrand> {
 	public String table() {
 		return "Brand";
 	}
-
-	
 	
 }

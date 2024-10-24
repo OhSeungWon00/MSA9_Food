@@ -9,9 +9,11 @@
 <%@page import="food.Service.UserService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	String root = request.getContextPath();
-	UserService userService =  new UserServiceImpl();
-	List<User> userList = userService.list();
+    String root = request.getContextPath();
+    UserService userService =  new UserServiceImpl();
+    List<User> userList = userService.list();
+    request.setCharacterEncoding("UTF-8");	
+	response.setCharacterEncoding("UTF-8");	
 %>
 <!DOCTYPE html>
 <html>
@@ -69,29 +71,29 @@
     <table>
         <thead>
             <tr>
-                <th><input type="checkbox" onclick="selectAll(this)"></th>
+                <th>번호</th>
                 <th>회원ID</th>
                 <th>회원이름</th>
                 <th>이메일</th>
-                <th>액션</th>
+                <th>관리</th>
             </tr>
         </thead>
         <tbody>
-            <!-- 여기서부터 회원 목록 반복 -->
+            <!-- 회원 목록 반복 -->
             <c:set var="userList" value="<%= userList %>" />
-            <c:forEach var="user" items="${userList}">
+            <c:forEach var="user" items="${userList}" varStatus="status">
                 <tr>
-                    <td><input type="checkbox" name="selectedUsers" value="${user.userId}"></td>
+                    <!-- 번호를 status.index로 출력 -->
+                    <td>${status.index + 1}</td>
                     <td>${user.userId}</td>
                     <td>${user.name}</td>
                     <td>${user.email}</td>
                     <td>
-                    	<button type="button">수정</button>
-                    	<button type="button" onclick="deleteUser('${user.userId}')">삭제</button>
+                        <button type="button" onclick="deleteUser('${user.userId}')">회원 삭제</button>
                     </td>
                 </tr>
             </c:forEach>
-            <!-- 여기까지 회원 목록 반복 -->
+            <!-- 회원 목록 반복 끝 -->
         </tbody>
     </table>
 
@@ -106,20 +108,9 @@
         <a href="#">&raquo;</a>
     </div>
 
-    <!-- 수정 및 삭제 버튼 -->
-    <div style="margin-top: 20px; text-align: center;">
-        <button type="submit" class="btn btn-delete" name="action" value="delete">선택 삭제</button>
-    </div>
 </form>
 
 <script>
-    function selectAll(checkbox) {
-        var checkboxes = document.getElementsByName('selectedUsers');
-        for (var i = 0; i < checkboxes.length; i++) {
-            checkboxes[i].checked = checkbox.checked;
-        }
-    }
-    
     function deleteUser(userId) {
         if (confirm('정말로 회원 계정을 삭제하시겠습니까?')) {
             var form = document.createElement('form');
@@ -136,7 +127,6 @@
             form.submit();  // 폼 제출
         }
     }
-
 </script>
 
 </body>
