@@ -19,10 +19,10 @@
 	
 	String root = request.getContextPath();
 	if( result > 0 ) {
-		response.sendRedirect(root + "/admin/user/index.jsp");
+		response.sendRedirect(root + "/admin/user/delete.jsp");
 	}
 	else {
-		response.sendRedirect(root + "/admin/user/index.jsp?error=delete");
+		response.sendRedirect(root + "/admin/user/delete.jsp?error=delete");
 	}
 	
 	

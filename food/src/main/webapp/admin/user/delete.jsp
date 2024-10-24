@@ -121,8 +121,22 @@
     }
     
     function deleteUser(userId) {
-    	location.href = "<%= root %>/admin/user/delete.jsp?userId=" + userId
+        if (confirm('정말로 회원 계정을 삭제하시겠습니까?')) {
+            var form = document.createElement('form');
+            form.method = 'POST';
+            form.action = "<%= root %>/admin/user/deletePro.jsp";  // 삭제를 처리할 deletePro.jsp로 POST 요청
+
+            var hiddenField = document.createElement('input');
+            hiddenField.type = 'hidden';
+            hiddenField.name = 'userId';
+            hiddenField.value = userId;
+
+            form.appendChild(hiddenField);
+            document.body.appendChild(form);
+            form.submit();  // 폼 제출
+        }
     }
+
 </script>
 
 </body>
