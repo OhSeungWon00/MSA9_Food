@@ -9,7 +9,7 @@
     <% 
     	request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
-    
+		
     	String name = request.getParameter("name");
     	String userId= request.getParameter("id");
     	String email = request.getParameter("email");

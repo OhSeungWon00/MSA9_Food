@@ -1,0 +1,243 @@
+.frame-20,
+.frame-20 * {
+  box-sizing: border-box;
+}
+.frame-20 {
+  background: #fff0f0;
+  height: 295px;
+  position: relative;
+  overflow: hidden;
+}
+.group-17 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-5 {
+  background: #3d8c76;
+  width: 67px;
+  height: 34px;
+  position: absolute;
+  left: 247px;
+  top: 254px;
+}
+.div {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 249px;
+  top: 257px;
+  width: 63px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-14 {
+  background: #fffdfd;
+  width: 94px;
+  height: 94px;
+  position: absolute;
+  left: 227px;
+  top: 23px;
+}
+.group-23 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-15 {
+  background: #fffdfd;
+  width: 49px;
+  height: 12px;
+  position: absolute;
+  left: 256px;
+  top: 128px;
+}
+.div2 {
+  color: #000000;
+  text-align: center;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  left: 262px;
+  top: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-41 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-11 {
+  background: #fffdfd;
+  width: 143px;
+  height: 25.17px;
+  position: absolute;
+  left: 21px;
+  top: 29.07px;
+}
+.div3 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: 21px;
+  top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div4 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: 22px;
+  top: 31px;
+  width: 139px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-38 {
+  position: absolute;
+  inset: 0;
+}
+.div5 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: 21px;
+  top: 61px;
+  width: 156px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-37 {
+  width: 182px;
+  height: 19px;
+  position: static;
+}
+.rectangle-12 {
+  background: #fffdfd;
+  width: 182px;
+  height: 19px;
+  position: absolute;
+  left: 21px;
+  top: 78px;
+}
+._177-27 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 23px;
+  top: 79px;
+  width: 176px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-39 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-16 {
+  width: 155px;
+  height: 90px;
+  position: absolute;
+  left: 23px;
+  top: 184px;
+  overflow: visible;
+}
+.div6 {
+  color: #000000;
+  text-align: center;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: 22px;
+  top: 168px;
+  width: 67px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._3 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 23px;
+  top: 187px;
+  width: 153px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-40 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-13 {
+  background: #fffdfd;
+  width: 160.99px;
+  height: 21px;
+  position: absolute;
+  left: 23.01px;
+  top: 125px;
+}
+.div7 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: 23px;
+  top: 107px;
+  width: 154px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._032-5656-5656 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 29px;
+  top: 126px;
+  width: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+
+

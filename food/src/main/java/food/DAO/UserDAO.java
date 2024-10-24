@@ -33,16 +33,5 @@ public class UserDAO extends BaseDAOImpl<User> {
 	public String table() {
 		return "user";
 	}
-	
-	
-	
-	
-	 
-}
-	
-	
-	
-	
-	
-	
 
+}
