@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package food.DAO;
 
 import java.sql.ResultSet;
@@ -18,42 +17,6 @@ public class newBrandDAO extends BaseDAOImpl<newBrand> {
 		return newbrand;
 	}
 
-	@Override
-	public String pk() {
-		return "name";
-	}
-
-	@Override
-	public String table() {
-		return "Brand";
-	}
-	
-	
-	
-	
-
-	
-	
-}
-=======
-package food.DAO;
-
-import java.sql.ResultSet;
-import com.alohaclass.jdbc.dao.BaseDAOImpl;
-import food.DTO.newBrand;
-
-public class newBrandDAO extends BaseDAOImpl<newBrand> {
-
-	@Override
-	public newBrand map(ResultSet arg0) throws Exception {
-		newBrand newbrand = new newBrand();
-		
-		newbrand.setName(rs.getString("name"));
-		newbrand.setLocation(rs.getString("location"));
-		newbrand.setPhone(rs.getString("phone"));
-		newbrand.setContent(rs.getString("content"));
-		return newbrand;
-	}
 
 	@Override
 	public String pk() {
@@ -64,12 +27,7 @@ public class newBrandDAO extends BaseDAOImpl<newBrand> {
 	public String table() {
 		return "Brand";
 	}
-	
-	
-	
-	
 
 	
 	
 }
->>>>>>> refs/heads/main
