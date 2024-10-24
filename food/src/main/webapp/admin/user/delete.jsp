@@ -1,20 +1,23 @@
-<%-- JSTL --%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@page import="com.alohaclass.jdbc.dto.PageInfo"%>
+<%@ include file="/layout/jstl.jsp" %>
+<%@ include file="/layout/common.jsp" %>
 <%@page import="food.DTO.User"%>
 <%@page import="java.util.List"%>
 <%@page import="food.Service.UserServiceImpl"%>
 <%@page import="food.Service.UserService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-    String root = request.getContextPath();
-    UserService userService =  new UserServiceImpl();
-    List<User> userList = userService.list();
-    request.setCharacterEncoding("UTF-8");	
-	response.setCharacterEncoding("UTF-8");	
+	// 페이지 번호
+	String pageStr = request.getParameter("page");
+	int pageNo = 1;
+	if( pageStr != null )
+		pageNo = Integer.parseInt( pageStr );
+	
+    UserService userService = new UserServiceImpl();
+    PageInfo<User> pageInfo = userService.page(pageNo);
+    List<User> userList = pageInfo.getList();
 %>
+<c:set var="pageInfo" value="<%= pageInfo %>" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -99,13 +102,18 @@
 
     <!-- 페이지네이션 -->
     <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">&raquo;</a>
+        <a href="?page=${pageInfo.page.prev}">&laquo;</a>
+    	<c:forEach var="page" begin="${pageInfo.page.start}" end="${pageInfo.page.end}">
+    		
+		    <a href="?page=${page}" class="<c:out value='${page == pageInfo.page.page ? "active" : ""}'/>">${page}</a>
+		</c:forEach>
+        <a href="?page=${pageInfo.page.next}">&raquo;</a>
+		    	
+<!--         <a href="#" class="active">1</a> -->
+<!--         <a href="#">2</a> -->
+<!--         <a href="#">3</a> -->
+<!--         <a href="#">4</a> -->
+<!--         <a href="#">5</a> -->
     </div>
 
 </form>

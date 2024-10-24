@@ -1,45 +1,79 @@
-<%@page import="food.DAO.UserDAO"%>
+<%@page import="food.DTO.User"%>
 <%@page import="food.Service.UserServiceImpl"%>
 <%@page import="food.Service.UserService"%>
-<%@page import="food.DTO.User"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+     * { margin: 0; padding: 0; box-sizing: border-box;} 
+    .c{
+    	display: flex;
+    	height: 20px;
+    }
+
 
     
-    <% 
-    	String name = request.getParameter("name");
-    	String userId= request.getParameter("id");
-    	String email = request.getParameter("email");
-    	String password = request.getParameter("password");
-    	String password2 = request.getParameter("password2");
-    	String phone= request.getParameter("phone");
-    	//id -> userId -> ueser_id
+    </style>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <form action="signup_pro.jsp" method="post">
 
-     	User user = User.builder()
-    							.user_id(userId)
-    							.password(password)
-    							.name(name)
-    							.email(email)
-    							.phone(phone)
-    							.build();
-    	
-    	int result = 0;
-    	
-    	
-    	// 회원 가입 요청 (비밀번호가 같고, ID가 중복되지 않은 경우)
-    	if(password.equals(password2) ){
-    	UserService userService = new UserServiceImpl();
-    	result = userService.signup(user);    		
-    	}
-    	
-    	
-    	// 회원가입 성공
-    	if (result>0){
-    		response.sendRedirect("index.jsp");		// 메인화면으로 이동
-    	}
     
-    	// 회원가입 실패
-    	else {
-    		response.sendRedirect("index.jsp?error=0");	// 다시 회원가입페이지로(에러포함)
-    	} 
-    %>
+        <label for="name">이름:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+	    <label for="id">아이디:</label><br>
+		<div class="c">
+	        <input type="text" id="id" name="id" required><br><br>
+	        <c:if test="${param.error == 1 }">
+				<p style="color: red;">중복되는 아이디가 존재합니다.</p>
+				</c:if>   
+	        <c:if test="${param.error == 2 }">
+				<p style="color: red;">중복되는 아이디가 존재합니다.</p>
+				</c:if>   
+		</div>
+        
+        
+
+        <label for="password">비밀번호:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        
+        
+        <label for="password2">비밀번호 확인:</label><br>
+        <div class="c">
+        <input type="password" id="password2" name="password2" required> 
+	        <c:if test="${param.error == 0 }">
+			<p style="color: red;">비밀번호가 다릅니다</p>
+			</c:if>        
+	        <c:if test="${param.error == 2 }">
+			<p style="color: red;">비밀번호가 다릅니다</p>
+			</c:if>        
+        </div>
+		
+       
+		<br>	
+		<br>
+		
+		<label for="email">이메일:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+        
+		<label for="birth">생년월일</label><br>
+        <input type="date" id="birth" name="birth" required><br><br>
+        
+        <label for="phone">전화번호:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <input type="submit" value="회원가입">
+    </form>
+</body>
+</html>
