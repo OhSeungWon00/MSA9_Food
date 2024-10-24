@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%@page import="food.Service.newBrandServiceImpl"%>
 <%@page import="food.Service.newBrandService"%>
 <%@page import="food.DTO.newBrand"%>
@@ -17,12 +16,6 @@
     String location = request.getParameter("location");
     String phone = request.getParameter("phone");
     String content = request.getParameter("content");
-    
-    
-	out.println(name);
-	out.println(location);
-	out.println(phone);
-	out.println(content);
     
     newBrand newbrand = newBrand.builder()
     					.name(name)
@@ -43,4 +36,6 @@
     else{
     	response.sendRedirect("newBrand.jsp?error=0");
     }
-%>    
+
+    
+    %>
