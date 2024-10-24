@@ -37,5 +37,28 @@
         <input type="submit" value="취소">
     </form>
     
+    
+    
+    	<!-- 개인정보 수정 폼 -->
+        <form action="updateBrand_pro2.jsp" method="post">
+        <label for="name">내아이디</label><br>
+        <input type="text" id="name" name="name" value="${ userId }" ><br><br>
+        <label for="password">비밀번호</label><br>
+        <input type="password" id="password" name="password" value="${ password }" ><br><br>
+        <label for="id">이름</label><br>
+        <input type="text" id="name" name="name" value="${ name }"><br><br>
+        <label for="id">메일</label><br>
+        <input type="text" id="email" name="email" value="${email}"><br><br>
+		<label for="id">전화번호</label><br>
+        <input type="text" id="email" name="email" value="${phone}"><br><br>
+		<label for="id">생일</label><br>
+        <input type="text" id="birth" name="email" value="${birth}"><br><br>
+		
+        <input type="submit" value="수정">
+    </form>
+    <form action="index.jsp" method="post">
+        <input type="submit" value="취소">
+    </form>
+    
 </body>
 </html>

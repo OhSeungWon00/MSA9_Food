@@ -17,6 +17,12 @@
     String phone = request.getParameter("phone");
     String content = request.getParameter("content");
     
+    
+	out.println(name);
+	out.println(location);
+	out.println(phone);
+	out.println(content);
+    
     newBrand newbrand = newBrand.builder()
     					.name(name)
     					.location(location)

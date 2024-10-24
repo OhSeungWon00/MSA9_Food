@@ -37,6 +37,7 @@ public class newBrandServiceImpl implements newBrandService{
 			}
 			return selectedBrandName;
 	}
+	
 
 	@Override
 	public int brandUpdate(newBrand newBrand) {
@@ -59,4 +60,7 @@ public class newBrandServiceImpl implements newBrandService{
 		return result;
 		
 	}
+
+
+
 }
