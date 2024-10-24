@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class UserAuth {
 	private Long id;
-	private String userId;
+	private String user_id;
 	private String auth;
 	private Timestamp createAt;
 	private Timestamp updatedAt;

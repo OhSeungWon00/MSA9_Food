@@ -14,6 +14,6 @@ public class Menu {
 	private String name;
 	private String price;
 	private String comment;
-	private Long brandId;
-	private Long fileId;
+	private String brandId;
+	private String fileId;
 }
