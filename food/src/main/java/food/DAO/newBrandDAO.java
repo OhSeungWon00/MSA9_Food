@@ -27,4 +27,10 @@ public class newBrandDAO extends BaseDAOImpl<newBrand> {
 		return "Brand";
 	}
 	
+	
+	
+	
+
+	
+	
 }
