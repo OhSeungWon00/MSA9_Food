@@ -21,6 +21,8 @@ public class UserDAO extends BaseDAOImpl<User> {
 		user.setName(rs.getString("name"));
 		user.setEmail(rs.getString("email"));
 		user.setPhone(rs.getString("phone"));
+		user.setBirth(rs.getString("birth"));
+		user.setIntro(rs.getString("intro"));
 		return user;
 	}
 

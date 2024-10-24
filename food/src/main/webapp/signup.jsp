@@ -31,12 +31,18 @@
     
         <label for="name">이름:</label><br>
         <input type="text" id="name" name="name" required><br><br>
-
-        <label for="id">아이디:</label><br>
-        <input type="text" id="id" name="id" required><br><br>
+	    <label for="id">아이디:</label><br>
+		<div class="c">
+	        <input type="text" id="id" name="id" required><br><br>
+	        <c:if test="${param.error == 1 }">
+				<p style="color: red;">중복되는 아이디가 존재합니다.</p>
+				</c:if>   
+	        <c:if test="${param.error == 2 }">
+				<p style="color: red;">중복되는 아이디가 존재합니다.</p>
+				</c:if>   
+		</div>
         
-        <label for="email">이메일:</label><br>
-        <input type="text" id="email" name="email" required><br><br>
+        
 
         <label for="password">비밀번호:</label><br>
         <input type="password" id="password" name="password" required><br><br>
@@ -49,11 +55,21 @@
 	        <c:if test="${param.error == 0 }">
 			<p style="color: red;">비밀번호가 다릅니다</p>
 			</c:if>        
+	        <c:if test="${param.error == 2 }">
+			<p style="color: red;">비밀번호가 다릅니다</p>
+			</c:if>        
         </div>
 		
        
 		<br>	
 		<br>
+		
+		<label for="email">이메일:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+        
+		<label for="birth">생년월일</label><br>
+        <input type="date" id="birth" name="birth" required><br><br>
+        
         <label for="phone">전화번호:</label><br>
         <input type="tel" id="phone" name="phone" required><br><br>
 
