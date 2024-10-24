@@ -24,11 +24,4 @@ public class UserAuthDAO extends BaseDAOImpl<UserAuth> {
 	public String table() {
 		return "user_auth";
 	}
-	
-	
-	
-	
-
-	
-	
 }

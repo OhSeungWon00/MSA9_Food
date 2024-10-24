@@ -25,12 +25,5 @@ public class PasswordUtils {
 	public static boolean check(String password, String encodedPassword) {
 		return BCrypt.checkpw(password, encodedPassword);
 	}
-	
-	
-	
-	
-	
-	
-	
 
 }
