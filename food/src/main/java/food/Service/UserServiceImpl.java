@@ -73,6 +73,7 @@ public class UserServiceImpl implements UserService{
 		return selectedUser;
 	}
 
+
 	@Override
 	public int delete(User user) {
 		int result = 0;
@@ -98,18 +99,5 @@ public class UserServiceImpl implements UserService{
 	}
 	
 	
-	
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

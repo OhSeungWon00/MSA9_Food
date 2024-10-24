@@ -12,6 +12,7 @@ public interface UserService {
 	// 로그인
 	public User login(User user);
 	
+
 	// 사용자 관리 (유저 계정 삭제)
 	public int delete(User user);
 	
@@ -22,4 +23,7 @@ public interface UserService {
 	
 	
 	
+}
+
+
 }
