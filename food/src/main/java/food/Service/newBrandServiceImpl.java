@@ -37,6 +37,7 @@ public class newBrandServiceImpl implements newBrandService{
 			}
 			return selectedBrandName;
 	}
+<<<<<<< HEAD
 	
 	@Override
 	public int brandUpdate(newBrand newBrand) {
@@ -60,6 +61,34 @@ public class newBrandServiceImpl implements newBrandService{
 		
 	}
 	
+=======
+
+	@Override
+	public int brandUpdate(newBrand newBrand) {
+		int result = 0;
+		
+		try {
+			result = newbrandDAO.update(newBrand);
+			System.out.println(newBrand.getName());
+			System.out.println("update 성공");
+			
+		} catch (Exception e) {
+			System.out.println("업뎃오류");
+			e.printStackTrace();
+		}
+		
+		if(result == 0) {
+			return 0;
+		}		
+		
+		return result;
+		
+	}
+	
+
+
+
+>>>>>>> branch 'osw' of https://github.com/OhSeungWon00/MSA9_Food.git
 
 
 

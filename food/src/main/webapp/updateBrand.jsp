@@ -18,12 +18,6 @@
     <form action="updateBrand_pro.jsp" method="post">
     	<input type="text" id= "searchname" name="searchname">
     	<input type="submit" value="검색">
-    	
-    	
-    	
-    	
-    	
-    	
     </form>
     
     
