@@ -7,16 +7,8 @@
 
     
     <% 
-<<<<<<< HEAD
-    	String userId= request.getParameter("id");
-    	String password = request.getParameter("password");
-    	String name = request.getParameter("name");
-    	String email = request.getParameter("email");
-    	//id -> userId -> user_id
-=======
     	request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
->>>>>>> refs/heads/main
     
     	String name = request.getParameter("name");
     	String userId= request.getParameter("id");

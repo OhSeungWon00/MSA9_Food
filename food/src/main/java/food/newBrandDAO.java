@@ -1,4 +1,4 @@
-package food.DAO;
+package food;
 
 import java.sql.ResultSet;
 import com.alohaclass.jdbc.dao.BaseDAOImpl;
