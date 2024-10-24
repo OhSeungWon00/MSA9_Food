@@ -1,6 +1,11 @@
 package food.DAO;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.alohaclass.jdbc.dao.BaseDAOImpl;
 
@@ -28,7 +33,5 @@ public class UserDAO extends BaseDAOImpl<User> {
 	public String table() {
 		return "user";
 	}
-	
-	
-	
+
 }

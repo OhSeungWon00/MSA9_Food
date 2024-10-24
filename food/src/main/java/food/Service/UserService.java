@@ -1,5 +1,7 @@
 package food.Service;
 
+import java.util.List;
+
 import food.DTO.User;
 
 public interface UserService {
@@ -11,4 +13,16 @@ public interface UserService {
 	public User login(User user);
 	
 
+	// 사용자 관리 (유저 계정 삭제)
+	public int delete(User user);
+	
+	// 회원목록
+	public List<User> list();
+	
+	// 유저 조회
+	
+	
+	
 }
+
+

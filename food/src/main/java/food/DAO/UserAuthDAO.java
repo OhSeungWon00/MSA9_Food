@@ -1,9 +1,7 @@
 package food.DAO;
 
 import java.sql.ResultSet;
-
 import com.alohaclass.jdbc.dao.BaseDAOImpl;
-
 import food.DTO.UserAuth;
 public class UserAuthDAO extends BaseDAOImpl<UserAuth> {
 
@@ -24,12 +22,4 @@ public class UserAuthDAO extends BaseDAOImpl<UserAuth> {
 	public String table() {
 		return "user_auth";
 	}
-	
-	
-	
-	
-	
-
-	
-	
 }

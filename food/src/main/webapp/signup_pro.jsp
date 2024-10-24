@@ -9,7 +9,7 @@
     <% 
     	request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
-    
+		
     	String name = request.getParameter("name");
     	String userId= request.getParameter("id");
     	String email = request.getParameter("email");
@@ -38,7 +38,7 @@
     	
     	// 회원가입 성공
     	if (result>0){
-    		response.sendRedirect("signup.jsp");		// 메인화면으로 이동
+    		response.sendRedirect("login.jsp");		// 로그인페이지로 이동
     	}
     
     	// 회원가입 실패
