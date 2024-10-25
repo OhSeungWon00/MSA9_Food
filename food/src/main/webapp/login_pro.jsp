@@ -23,13 +23,9 @@
 	}
 	else{
 	// 로그인 성공
-	//session.setAttribute("loginId", userId);
-	//session.setAttribute("user", loginUser);
+	session.setAttribute("loginId", userId);
+	session.setAttribute("user", loginUser);
 	// 메인 화면으로 이동
-    out.println("로그인 성공 ㅋ");
+	response.sendRedirect("main.jsp");	
 	}
-	
-	
-    	
-	
 %>
