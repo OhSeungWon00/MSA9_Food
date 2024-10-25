@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+
+.header,
+.header * {
+  box-sizing: border-box;
+}
+.header {
+  background-color: white;
+  width: 100%;
+  padding: 40px 60px 40px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.logo {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  object-fit: cover;
+}
+.search {
+  flex: 1;
+  height: 32px;
+  position: relative;
+}
+.fieldset {
+  border-radius: 17px;
+  border-style: solid;
+  border-color: #d2d2d2;
+  border-width: 1px;
+  width: 350px;
+  height: 32px;
+  position: absolute;
+  left: 52px;
+  top: calc(50% - 16px);
+}
+.mypage {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 11px;
+  top: calc(50% - 12.5px);
+  opacity: 0.2;
+}
+.input {
+  background: #ffffff;
+  height: 30px;
+  position: absolute;
+  right: 31px;
+  left: 43px;
+  top: calc(50% - 15px);
+  overflow: hidden;
+}
+.search-box {
+  height: 15px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 7.5px;
+  overflow: hidden;
+}
+
+.search-text {
+  color: #757575;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 12.2890625px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-width: none;
+}
+.navigation {
+  flex-shrink: 0;
+  width: 240px;
+  height: 15px;
+  position: relative;
+}
+.log-in {
+  color: #8c8c8c;
+  text-align: center;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 12.2890625px;
+  font-weight: 400;
+  position: absolute;
+  left: 92px;
+  top: -0.5px;
+  width: 55px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.join-bw {
+  color: #8c8c8c;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 12.1875px;
+  font-weight: 400;
+  position: absolute;
+  left: 177px;
+  top: -0.5px;
+  width: 55px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.my-page-icon {
+  opacity: 0.4;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  overflow: visible;
+}
+
+.container{
+	margin-top: 150px;
+}
+
+
+
+
+/* 공통 스타일 */
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    height: 300px;
+}
+
+/* 메인 푸터 */
+.footer_main {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list_item {
+    display: flex;
+    text-align: left;
+    width: 100%;
+}
+
+/* 각 리스트 섹션 스타일 */
+.list1 ul li{
+	font-weight: bold;
+	opacity: 1;
+}
+
+.list1, .list2, .list3, .list4 {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.list2, .list3, .list4 {
+	opacity: 70%;
+	flex: 1;
+	margin: 0 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li{
+	margin-bottom: 10px;
+}
+ul li a{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* SNS 아이콘 섹션 */
+.list5 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.list5 img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* 푸터 하단 리스트 */
+
+.footer_under{
+	width: 960px;
+	margin: 0 auto;
+}
+.footer_list, .address_1, .address_2, .company {
+	display: flex;
+	text-align: left;
+    margin: 10px 0;
+}
+
+.footer_list a, .address_1 a, .address_2 a, .company a {
+	display: flex;
+	text-align: left;
+	color: black;
+    opacity: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer_list a:hover, .address_1 a:hover, .address_2 a:hover, .company a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* 회사명과 저작권 */
+.company {
+}
+
+section {
+	margin: 100px auto;
+	min-height: 300px;
+}
+
+.text-title {
+	font-size: 32px;
+}
+
+.underLine{
+	width: 100%;
+	height: 70px;
+	background-color: #7070ff;
+	margin-bottom: 0;
+}
