@@ -17,7 +17,7 @@ public class UserAuthDAO extends BaseDAOImpl<UserAuth> {
 
 	@Override
 	public String pk() {
-		return "id";
+		return "no";
 	}
 
 	@Override

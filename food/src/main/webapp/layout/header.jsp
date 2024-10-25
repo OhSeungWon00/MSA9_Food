@@ -18,8 +18,8 @@
 	    </div>
 	  </div>
 	  <div class="navigation">
-	    <div class="log-in">로그인</div>
-	    <div class="join-bw">회원가입</div>
+	    <div class="log-in"><a href="login.jsp">로그인</a></div>
+	    <div class="join-bw"><a href="signup.jsp">회원가입</a></div>
 	  </div>
 	  	<img class="mypage" src="<%= root %>/static/img/mypage.png" />
 	</div>

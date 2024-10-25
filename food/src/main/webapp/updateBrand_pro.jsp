@@ -8,10 +8,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <% 
+	System.out.println("파일업로드 다녀옴");
 	request.setCharacterEncoding("UTF-8");
 	response.setCharacterEncoding("UTF-8");
-
+	
+	if(request.getParameter("searchname") == null){
+		System.out.println("포워드로 불러옴 : " + request.getParameter("searchname"));
+    	String searchname = (String) request.getAttribute("searchname");		
+	}
+	
     String searchname = request.getParameter("searchname");
+    
 
     // newBrand 객체 생성
     newBrand newbrand = newBrand.builder()
@@ -25,11 +32,13 @@
     newbrand = newBrandService.search(newbrand);
     
 	try{
-    request.setAttribute("name", newbrand.getName() );
-    request.setAttribute("location", newbrand.getLocation() );
-    request.setAttribute("phone", newbrand.getPhone() );
-    request.setAttribute("content", newbrand.getContent() );		
-	request.getRequestDispatcher("updateBrand.jsp").forward(request, response);
+		
+	    request.setAttribute("brandId", newbrand.getBrandId() );
+	    request.setAttribute("name", newbrand.getName() );
+	    request.setAttribute("location", newbrand.getLocation() );
+	    request.setAttribute("phone", newbrand.getPhone() );
+	    request.setAttribute("content", newbrand.getContent() );		
+		request.getRequestDispatcher("updateBrand.jsp").forward(request, response);
 	} catch(Exception e){
 		System.out.println("오류");
 		response.sendRedirect("updateBrand.jsp?error=0");

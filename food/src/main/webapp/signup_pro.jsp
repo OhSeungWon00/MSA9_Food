@@ -29,7 +29,7 @@
     	//id -> userId -> ueser_id
     	
     	
-    	 int result1 = 0;
+    	int result1 = 0;
     	int result2 = 0;
     	for(User user : userList){
     		if(userId.equals(user.getUserId())){

@@ -63,24 +63,24 @@ menu, ol, ul {
 				<div class="div6">이름</div>
 				<input class="rectangle-1594" type="text" id="name" name="name"
 					required><br> <br>
-				<div class="div7">전화번호</div>
-				<input class="rectangle-1595" type="tel" id="phone" name="phone"
-					required><br> <br>
-				<div class="div8">이메일</div>
+				<div class="div7">이메일</div>
 				<input class="rectangle-1596" type="text" id="email" name="email"
+					required><br> <br>
+				<div class="div8">전화번호</div>
+				<input class="rectangle-1595" type="tel" id="phone" name="phone"
 					required><br> <br>
 				<div class="div9">생년월일</div>
 				<input class="rectangle-1597" type="date" id="birth" name="birth"
-					required><br>
-				<br> <input class="div10" type="submit" value="회원가입">
+					required><br> <br> <input class="div10"
+					type="submit" value="회원가입">
 			</form>
 			<div class="header">
 				<div class="container">
 					<div class="navigation">
 						<div class="div20">로그인</div>
 					</div>
-					<img class="my-page" src="./signup_svg/myPage.svg" /> 
-					<img class="_1" src="./signup_svg/logo.png" />
+					<img class="my-page" src="./signup_svg/myPage.svg" /> <img
+						class="_1" src="./signup_svg/logo.png" />
 				</div>
 			</div>
 			<img class="_2" src="./signup_svg/logo.png" />

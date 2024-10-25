@@ -9,9 +9,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-String root = request.getContextPath();
-newBrandService newBrandService = new newBrandServiceImpl();
-List<newBrand> brandList = newBrandService.list();
+	String root = request.getContextPath();
+	newBrandService newBrandService = new newBrandServiceImpl();
+	List<newBrand> brandList = newBrandService.list();
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -91,8 +91,8 @@ menu, ol, ul {
 					<c:forEach var="brand" items="${brandList}" varStatus="status">
 						<form action="updateBrand_pro.jsp" method="post">
 							<div class="group-55">
-								<input class="h" type="text" name="searchname"
-									value="${brand.name}" />
+								<input type="hidden" name="brandId" value="${brand.brandId}" /> 
+								<input class="h" type="text" name="searchname" value="${brand.name}" />
 								<div class="_13">${status.index + 1 }</div>
 								<div class="div12">${brand.name}</div>
 								<div class="_010-1111-1234">${brand.phone}</div>

@@ -18,7 +18,7 @@
 	a, button, input, select, h1, h2, h3, h4, h5, * {
 		box-sizing: border-box;
 		margin: 0;
-		padding: 0;
+		padding: 0;3
 		border: none;
 		text-decoration: none;
 		background: none;
