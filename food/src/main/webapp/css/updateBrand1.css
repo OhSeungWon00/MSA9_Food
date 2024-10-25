@@ -1,0 +1,454 @@
+.div,
+.div * {
+  box-sizing: border-box;
+}
+.div {
+  background: #e1e1ff;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+}
+.sidebar {
+  background: #ffffff;
+  width: 180px;
+  height: 550px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.user {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 87px;
+  overflow: hidden;
+}
+.user2 {
+  color: #000000;
+  text-align: center;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: absolute;
+  left: 59px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame {
+  opacity: 0.5;
+  width: 13.33%;
+  height: 48%;
+  position: absolute;
+  right: 71.11%;
+  left: 15.56%;
+  bottom: 26%;
+  top: 26%;
+  overflow: visible;
+}
+.review {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 137px;
+  overflow: hidden;
+}
+.review2 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: absolute;
+  left: 59px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame2 {
+  opacity: 0.5;
+  width: 13.33%;
+  height: 48%;
+  position: absolute;
+  right: 71.33%;
+  left: 15.33%;
+  bottom: 26%;
+  top: 26%;
+  overflow: visible;
+}
+.restaurant {
+  background: #7070ff;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 187px;
+  overflow: hidden;
+}
+.restaurant2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  left: 59px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame3 {
+  width: 13.33%;
+  height: 48%;
+  position: absolute;
+  right: 71.33%;
+  left: 15.33%;
+  bottom: 26%;
+  top: 26%;
+  overflow: visible;
+}
+.restaurant3 {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 237px;
+  overflow: hidden;
+}
+.reservation {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: absolute;
+  left: 59px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame4 {
+  opacity: 0.5;
+  width: 13.33%;
+  height: 48%;
+  position: absolute;
+  right: 71.33%;
+  left: 15.33%;
+  bottom: 26%;
+  top: 26%;
+  overflow: visible;
+}
+.div2 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: 88px;
+  top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 22px;
+  top: 12px;
+  object-fit: cover;
+}
+.review-list {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 1134px;
+  height: 413px;
+  position: absolute;
+  left: 242px;
+  top: 87px;
+  overflow: hidden;
+}
+.rectangle-43 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 634px;
+  top: 48px;
+}
+.rectangle-48 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  left: 634px;
+  top: 219px;
+}
+.frame5 {
+  opacity: 0.5;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 763px;
+  top: 222px;
+  overflow: visible;
+}
+.div3 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Light", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  position: absolute;
+  left: 639px;
+  top: 222px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div4 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  left: 634px;
+  top: 201px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div5 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 63px;
+  top: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div6 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 63px;
+  top: 111px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div7 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 63px;
+  top: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div8 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 63px;
+  top: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rectangle-44 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 400px;
+  height: 40px;
+  position: absolute;
+  left: 167px;
+  top: 48px;
+}
+.rectangle-45 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 400px;
+  height: 40px;
+  position: absolute;
+  left: 167px;
+  top: 105px;
+}
+.rectangle-46 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 400px;
+  height: 40px;
+  position: absolute;
+  left: 167px;
+  top: 162px;
+}
+.rectangle-47 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 400px;
+  height: 178px;
+  position: absolute;
+  left: 167px;
+  top: 219px;
+}
+.rectangle-49 {
+  background: #7070ff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  left: 634px;
+  top: 245px;
+}
+.rectangle-50 {
+  background: #7070ff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  left: 634px;
+  top: 357px;
+}
+.div9 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  left: 690px;
+  top: 247px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div10 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  left: 690px;
+  top: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-title {
+  width: 1143px;
+  height: 50px;
+  position: absolute;
+  left: 239px;
+  top: 26px;
+  overflow: hidden;
+}
+.frame6 {
+  width: 2.1%;
+  height: 48%;
+  position: absolute;
+  right: 95.71%;
+  left: 2.19%;
+  bottom: 26%;
+  top: 26%;
+  overflow: visible;
+}
+.restaurant-list-modify {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 62px;
+  top: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rectangle-35 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  opacity: 0.5;
+  width: 121px;
+  height: 29px;
+  position: absolute;
+  left: 857px;
+  top: 8px;
+}
+.frame7 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 827px;
+  top: 10px;
+  overflow: visible;
+}
+.hi {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 1012px;
+  top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
