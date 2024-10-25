@@ -36,6 +36,7 @@ public class MenuServiceImpl implements MenuService{
 	@Override
 	public int update(Menu menu) {
 		int result = 0;
+		System.out.println("update : " + menu);
 		try {
 			result = menuDAO.update(menu);
 		} catch (Exception e) {

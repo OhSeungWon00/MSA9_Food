@@ -45,8 +45,8 @@
 </head>
 <body>
     <h1 style="text-align:center;">메뉴 등록</h1>
-    <form method="post" action="Menu_pro.jsp" style="width: 50%; margin: 0 auto;">
-    	<input type="hidden" value="<%=getMenu.getMenuId() %>"/>
+    <form method="post" action="Menu_update.jsp" style="width: 50%; margin: 0 auto;">
+    	<input type="hidden" name="menu_id" value="<%=getMenu.getMenuId() %>"/>
         <label>메뉴 이름: <input type="text" name="name" value="<%= getMenu.getName() %>" required></label><br><br>
         <label>가격: <input type="text" name="price" value="<%= getMenu.getPrice() %>" required></label><br><br>
         <label>설명: <textarea name="comment" required><%= getMenu.getComment() %></textarea></label><br><br>
