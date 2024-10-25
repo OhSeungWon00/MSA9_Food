@@ -57,6 +57,10 @@
       	<input class="new_btn" type="submit" value="매장등록"/>
       </div>
       	
+      <form action="fileupload_pro.jsp" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" multiple />
+		<p><input type="submit" value="업로드" /></p>
+	  </form>
       <div class="div3">사진등록</div>
       
       
