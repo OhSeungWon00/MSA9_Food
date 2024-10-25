@@ -128,14 +128,22 @@
   justify-content: flex-start;
 }
 .div10 {
-  border-radius: 0px;
+  background : white;
+  border-radius: 10px;
+  border: 1px solid black;
   width: 500px;
   height: 90px;
   position: absolute;
   left: 467px;
   top: 678px;
   overflow: visible;
+  font-size: 48px
 }
+.div10:hover{
+	background: #7070FF;
+	color: white;	
+}
+
 .signbtn {
   padding: 20px;
   width: 500px;
@@ -455,6 +463,7 @@
   left: 97px;
   top: 35px;
   object-fit: cover;
+  border-radius: 50%;
 }
 ._2 {
   width: 50px;
@@ -463,4 +472,5 @@
   left: 692px;
   top: 139px;
   object-fit: cover;
+  border-radius: 50%;
 }
