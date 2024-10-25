@@ -127,8 +127,11 @@
   align-items: center;
   justify-content: flex-start;
 }
-.div10 {
-  border-radius: 0px;
+.signbtn {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  text-align: center;
+  color: #ffffff;
   width: 500px;
   height: 90px;
   position: absolute;
@@ -136,12 +139,12 @@
   top: 678px;
   overflow: visible;
 }
-.signbtn {
+.div10 {
   padding: 20px;
   width: 500px;
   height: 90px;
   border: 1px solid #7070FF;
-  border-radius: 15px;
+  border-radius: 20px;
   background: #7070FF; 
   text-align: center;
   font-family: "NotoSansKr-Bold", sans-serif;
@@ -149,8 +152,8 @@
   font-size: 30px;
   font-weight: 700;
   position: absolute;
-  left: center;
-  top: 701px;
+  left: 467px;
+  top: 678px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -449,6 +452,7 @@
   overflow: visible;
 }
 ._1 {
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   position: absolute;
