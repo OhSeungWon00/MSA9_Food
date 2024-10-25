@@ -9,6 +9,7 @@
 	request.setCharacterEncoding("UTF-8");
 	Long menuId = Long.parseLong(request.getParameter("menu_id"));
 	MenuService menuService = new MenuServiceImpl();
+	int result = 0;
     // POST 요청 시 폼 데이터 처리
     if (request.getMethod().equalsIgnoreCase("POST")) {
         String name = request.getParameter("name");
@@ -16,6 +17,7 @@
         String comment = request.getParameter("comment");
         String brandId = request.getParameter("brandId");
         String fileId = request.getParameter("fileId");
+        
 
         // Menu 객체 생성 및 초기화
         Menu menu = Menu.builder()
@@ -29,8 +31,8 @@
 
         // 서비스 객체를 통해 메뉴 저장
         
-        menuService.update(menu);
-
+        result = menuService.update(menu);
+		out.println("수정 결과값 : " + result);
         // 저장 후 목록 페이지로 리다이렉트
         response.sendRedirect("Menu.jsp");
     }

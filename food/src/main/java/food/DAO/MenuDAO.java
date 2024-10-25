@@ -9,7 +9,7 @@ import food.DTO.Menu;
 public class MenuDAO extends BaseDAOImpl<Menu> {
 
 	@Override
-	public Menu map(ResultSet arg0) throws Exception {
+	public Menu map(ResultSet arg) throws Exception {
 		Menu menu = new Menu();
 		menu.setMenuId(rs.getLong("menu_id"));
 		menu.setName(rs.getString("name"));

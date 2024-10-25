@@ -23,29 +23,45 @@
         body {
             background-color: #E1E1FF;
             font-family: Arial, sans-serif;
+            margin:0;
         }
         .container {
             display: flex;
-            margin-top: 20px;
+        }
+        .container ul{
+        	
+        }
+        .container ul li{
+        
         }
         .sidebar {
+        	background-color: white;
             width: 15%;
-            background-color: #eef1ff;
             padding: 20px;
             height: 100vh;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
         .sidebar ul {
             list-style-type: none;
-            padding: 0;
+            padding: 10px;
         }
         .sidebar ul li {
+        	width: 80%;
             margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .sidebar ul li:hover{
+        	background-color: #7070ff;
+        	cursor: pointer;
+        }
+        .sidebar ul li:hover a {
+        	color:white;
         }
         .sidebar ul li a {
             text-decoration: none;
             color: #333;
-            font-size: 18px;
+            font-size: 90%;
         }
         .content {
             width: 85%;
@@ -69,10 +85,14 @@
             border-radius: 20px;
         }
         .table-container {
+        	width: 98%;
             background-color: white;
             padding: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            display:flex;
+            flex-direction : column;
+            justify-content: center;
         }
         table {
             width: 100%;
@@ -100,7 +120,6 @@
         .register-button {
             margin-top: 20px;
             display: flex;
-            flex-direction: row;
             justify-content: center;
             width: 100px;
             padding: 10px;
@@ -110,26 +129,38 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 15px;
+            margin:20px auto;
+        }
+        .content_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #E1E1FF;
+            padding: 10px 20px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>RestaurantList</h1>
-        <input type="text" class="search-box" placeholder="Search...">
-        <span>Hi, 관리자님</span>
-    </div>
+
     <div class="container">
         <div class="sidebar">
+			<div class="sidebar_logo">			
+                <img class="logo" src="../menu/menu_img/logo.png" alt="Logo" style="width: 50px; height: 50px;">
+			</div>
             <ul>
-                <li><img src="logo.png" alt="Logo" style="width: 50px; height: 50px;"></li>
-                <li><a href="#">User</a></li>
-                <li><a href="#">Review</a></li>
-                <li><a href="#">Restaurant</a></li>
-                <li><a href="#">Reservation</a></li>
+                <li class="user_nav" onclick="location.href='../user/delete.jsp'"><a href="#">User</a></li>
+                <li class="user_nav" onclick="location.href='../.jsp'"><a href="#">Review</a></li>
+                <li class="user_nav" onclick="location.href='../.jsp'"><a href="#">Restaurant</a></li>
+                <li class="user_nav" onclick="location.href='../.jsp'"><a href="#">Reservation</a></li>
             </ul>
         </div>
         <div class="content">
+            <div class="content_header">
+	        	<h1>RestaurantList</h1>
+	        	<input type="text" class="search-box" placeholder="Search...">
+	        	<span>Hi, 관리자님</span>
+	    	</div>
             <h2>임가네 숯불구이</h2>
             <div class="table-container">
                 <table>
@@ -138,7 +169,7 @@
                         <th>가격</th>
                         <th>설명</th>
                         <th>파일ID</th>
-                        <th>가격</th>
+                        <th>액션가면</th>
                     </tr>
                     <% for (Menu menu : menuList) { %>
                     <tr>
