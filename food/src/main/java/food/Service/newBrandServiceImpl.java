@@ -1,5 +1,7 @@
 package food.Service;
 
+import java.util.List;
+
 import food.DAO.newBrandDAO;
 import food.DTO.newBrand;
 
@@ -36,7 +38,6 @@ public class newBrandServiceImpl implements newBrandService{
 			}
 			return selectedBrandName;
 	}
-	
 
 	public int brandUpdate(newBrand newBrand) {
 		int result = 0;
@@ -58,6 +59,33 @@ public class newBrandServiceImpl implements newBrandService{
 		return result;
 		
 	}
+
+	@Override
+	public List<newBrand> list() {
+		List<newBrand> list = null;
+		try {
+			list = newbrandDAO.list();
+		} catch (Exception e) {
+			System.out.println("list 생성오류");
+			e.printStackTrace();
+		}
+		
+		return list;
+	}
+
+	@Override
+	public int delete(newBrand newbrand) {
+		int result = 0;
+		try {
+			result = newbrandDAO.delete(newbrand.getName() );
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+				
+		return result;
+	}
+	
+
 
 
 

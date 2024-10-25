@@ -26,11 +26,4 @@ public class newBrandDAO extends BaseDAOImpl<newBrand> {
 	public String table() {
 		return "Brand";
 	}
-	
-	
-	
-	
-
-	
-	
 }

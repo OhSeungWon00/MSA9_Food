@@ -12,6 +12,7 @@ public class UserDAO extends BaseDAOImpl<User> {
 	public User map(ResultSet arg0) throws Exception {
 		User user = new User();
 		user.setUserId(rs.getString("userId"));
+		user.setUserId(rs.getString("user_id"));
 		user.setPassword(rs.getString("password"));
 		user.setName(rs.getString("name"));
 		user.setEmail(rs.getString("email"));
