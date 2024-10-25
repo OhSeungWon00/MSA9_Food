@@ -57,11 +57,6 @@
 	      <img class="rectangle-145" src="<%= root %>/static/svg/rectangle-1450.svg" />
 	      <div class="rectangle-144"></div>
 	      <div class="rectangle-143"></div>
-	      <!-- 안녕하세요. bsy7021입니다. -->
-	      	<textarea class="rectangle-145" 
-					  rows="20" cols="20" placeholder="자기소개"
-					  name="intro"
-					 ><%= user.getIntro() %></textarea>
 	      <img class="frame2" src="<%= root %>/static/svg/frame1.svg" />
 	      <div class="div2">회원정보변경</div>
 	      <div class="_2-4">*2~4자 이내, 공백불가능, 한글가능</div>

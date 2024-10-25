@@ -12,7 +12,6 @@
 	String email = request.getParameter("email");
 	String phone = request.getParameter("phone");
 	String birth = request.getParameter("birth");
-	String intro = request.getParameter("intro");
 
 	User user = User.builder()
 				    .userId(request.getParameter("userId"))
@@ -20,7 +19,6 @@
 				    .email(request.getParameter("email"))
 				    .phone(request.getParameter("phone"))
 				    .birth(request.getParameter("birth"))
-				    .intro(request.getParameter("intro"))
 				    .build();
 	
 	// out.println(user);
