@@ -18,10 +18,10 @@
     String content = request.getParameter("content");
     
     
-	/* out.println(name);
+	out.println(name);
 	out.println(location);
 	out.println(phone);
-	out.println(content); */
+	out.println(content);
     
     newBrand newbrand = newBrand.builder()
     					.name(name)
@@ -36,7 +36,7 @@
     
     // 매장등록 성공
     if(result > 0){
-    	response.sendRedirect("invenBrand.jsp");
+    	response.sendRedirect("index.jsp");
     }
     // 매장등록 실패
     else{

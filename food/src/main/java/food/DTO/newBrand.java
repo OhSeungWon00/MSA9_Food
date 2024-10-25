@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class newBrand {
+	private Long brandId;
 	private String name;
 	private String location;
 	private String phone;

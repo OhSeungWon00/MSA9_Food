@@ -1475,15 +1475,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.my-page2 {
-  opacity: 0.4;
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  left: 1174px;
-  top: 41px;
-  overflow: visible;
-}
+
 ._12 {
   width: 50px;
   height: 50px;

@@ -76,7 +76,7 @@
               <span class="_1-span2">초이닷</span>
             </span>
           </div>
-          <img class="icon-star" src="icon-star0.svg" />
+          <img class="icon-star" src="./img/icon-star0.svg" />
           <div class="div3">
             청담동
             <br />
@@ -90,8 +90,8 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like" src="icon-like0.svg" />
-          <img class="icon-eye" src="icon-eye0.svg" />
+          <img class="icon-like" src="./img/icon-like0.svg" />
+          <img class="icon-eye" src="./img/icon-eye0.svg" />
         </div>
         <div class="content-22">
           <img class="image-1" src="./img/image-11.png" />
@@ -104,7 +104,7 @@
               <span class="_1-span4">초이닷</span>
             </span>
           </div>
-          <img class="icon-star2" src="icon-star1.svg" />
+          <img class="icon-star2" src="./img/icon-star1.svg" />
           <div class="div3">
             청담동
             <br />
@@ -118,8 +118,8 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like2" src="icon-like1.svg" />
-          <img class="icon-eye2" src="icon-eye1.svg" />
+          <img class="icon-like2" src="./img/icon-like1.svg" />
+          <img class="icon-eye2" src="./img/icon-eye1.svg" />
         </div>
         <div class="content-3">
           <img class="image-1" src="./img/image-12.png" />
@@ -132,7 +132,7 @@
               <span class="_1-span6">초이닷</span>
             </span>
           </div>
-          <img class="icon-star3" src="icon-star2.svg" />
+          <img class="icon-star3" src="./img/icon-star2.svg" />
           <div class="div3">
             청담동
             <br />
@@ -146,8 +146,8 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like3" src="icon-like2.svg" />
-          <img class="icon-eye3" src="icon-eye2.svg" />
+          <img class="icon-like3" src="./img/icon-like2.svg" />
+          <img class="icon-eye3" src="./img/icon-eye2.svg" />
         </div>
         <div class="content-4">
           <img class="image-1" src="./img/image-13.png" />
@@ -160,7 +160,7 @@
               <span class="_1-span8">초이닷</span>
             </span>
           </div>
-          <img class="icon-star4" src="icon-star3.svg" />
+          <img class="icon-star4" src="./img/icon-star3.svg" />
           <div class="div3">
             청담동
             <br />
@@ -174,8 +174,8 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like4" src="icon-like3.svg" />
-          <img class="icon-eye4" src="icon-eye3.svg" />
+          <img class="icon-like4" src="./img/icon-like3.svg" />
+          <img class="icon-eye4" src="./img/icon-eye3.svg" />
         </div>
         <div class="content-5">
           <img class="image-1" src="./img/image-14.png" />
@@ -188,7 +188,7 @@
               <span class="_1-span10">초이닷</span>
             </span>
           </div>
-          <img class="icon-star5" src="icon-star4.svg" />
+          <img class="icon-star5" src="./img/icon-star4.svg" />
           <div class="div3">
             청담동
             <br />
@@ -202,21 +202,20 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like5" src="icon-like4.svg" />
-          <img class="icon-eye5" src="icon-eye4.svg" />
+          <img class="icon-like5" src="./img/icon-like4.svg" />
+          <img class="icon-eye5" src="./img/icon-eye4.svg" />
         </div>
         <div class="content-6">
           <img class="image-1" src="./img/image-15.png" />
           <div class="_1">
             <span>
               <span class="_1-span11">
-                4.5
-                <br />
-              </span>
+              4.5
+              <br /></span>
               <span class="_1-span12">초이닷</span>
             </span>
           </div>
-          <img class="icon-star6" src="icon-star5.svg" />
+          <img class="icon-star6" src="./img/icon-star5.svg" />
           <div class="div3">
             청담동
             <br />
@@ -230,8 +229,8 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like6" src="icon-like5.svg" />
-          <img class="icon-eye6" src="icon-eye5.svg" />
+          <img class="icon-like6" src="./img/icon-like5.svg" />
+          <img class="icon-eye6" src="./img/icon-eye5.svg" />
         </div>
       </div>
       <div class="banner">
@@ -381,7 +380,7 @@
           <div class="div29">로그인</div>
           <div class="div30">회원가입</div>
         </div>
-        <img class="my-page" src="my-page0.svg" />
+        <img class="my-page" src="./img/my-page0.svg" />
         <div class="div31">흑대백(Logo)</div>
       </div>
     </div>
@@ -401,7 +400,7 @@
           <div class="div29">로그인</div>
           <div class="div32">회원가입</div>
         </div>
-        <img class="my-page2" src="my-page1.svg" />
+        <img class="my-page2" src="./img/my-page1.svg" />
         <img class="_12" src="./img/_16.png" />
       </div>
     </div>

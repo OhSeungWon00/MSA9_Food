@@ -34,16 +34,13 @@ menu, ol, ul {
 <title>Insert title here</title>
 </head>
 <body>
-
-
-	<h2>매장수정</h2>
-
 	<!--  <form action="updateBrand_pro.jsp" method="post">
     	<input type="text" id= "searchname" name="searchname">
     	<input type="submit" value="검색">
-    </form> -->
+    </form>  수동검색 -->
 
 <body>
+
 	<div class="div">
 		<div class="sidebar">
 			<div class="user">
@@ -68,32 +65,33 @@ menu, ol, ul {
 		<div class="review-list">
 			<img class="frame5" src="./invenBrand_img/frame4.svg" />
 
-			<form action="updateBrand_pro2.jsp" method="post">
+			<form action="updateBrand_pro2.jsp" method="post" >
 
 				<div class="div5">매장명</div>
-				<input class="rectangle-44" type="text" id="name" name="name"
-					value="${ name }">
+				<input class="rectangle-44" type="text" id="name" name="name" value="${ name }">
 				<div class="div6">주소</div>
-				<input class="rectangle-45" type="text" id="location"
-					name="location" value="${ phone }">
+				<input class="rectangle-45" type="text" id="location" name="location" value="${ location }">
 				<div class="div7">전화번호</div>
-				<input class="rectangle-46" type="text" id="location"
-					name="location" value="${ location }">
+				<input class="rectangle-46" type="text" id="phone" name="phone" value="${ phone }">
 				<div class="div8">매장설명</div>
 				<textarea class="rectangle-47" rows="5" cols="40" name="content" id="content" style="background-color: white;">${ content }</textarea>
 				
-				<div class="rectangle-49"></div>
-				
+				<input class="rectangle-50" type="submit" value="매장수정">
+			</form>
+			
+			<form action="fileupload_pro.jsp" method="post" enctype="multipart/form-data">
+				<p class="h"></p>			<!-- 데려가야됨 -->
+				<input type="hidden" name="brandId" value="${ brandId }"/> 
+				<input type="hidden" name="brandname" value="${ name }"/> 
 				<div class="div3">파일선택</div>
-				<div class="rectangle-48"></div>
+				<input class="div3" type="file" name="file" multiple />
+<!-- 				<div class="rectangle-48"></div> -->
 				
 				<div class="rectangle-43"></div>
 				<div class="div4">첨부파일</div>
-				
-				<button class="div9" type="button" onclick="location.href='여기에 파일등록jsp'">사진등록</button>>
-				
-				<input class="rectangle-50" type="submit" value="매장수정">
+				<p><input type="submit" class="rectangle-49" value="사진등록" /></p>
 			</form>
+				
 		</div>
 		<div class="sidebar-title">
 			<img class="frame6" src="./invenBrand_img/frame5.svg" />

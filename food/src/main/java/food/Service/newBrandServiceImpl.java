@@ -1,6 +1,8 @@
 package food.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import food.DAO.newBrandDAO;
 import food.DTO.newBrand;
@@ -26,12 +28,17 @@ public class newBrandServiceImpl implements newBrandService{
 		return result;
 	}
 
+	@Override
 	public newBrand search(newBrand newbrand) {
 		String name = newbrand.getName();
 		newBrand selectedBrandName = null;
+		System.out.println(" name : " + name);
 		
 			try {
-				selectedBrandName = newbrandDAO.select(name); // pk 출력
+				Map<Object, Object> where = new HashMap<Object, Object>();
+				where.put("name", name);
+				selectedBrandName = newbrandDAO.selectBy(where); // pk 출력
+				System.out.println("-- : " + selectedBrandName);
 			} catch (Exception e) {
 				System.out.println("호출오류");
 				e.printStackTrace();
@@ -39,6 +46,7 @@ public class newBrandServiceImpl implements newBrandService{
 			return selectedBrandName;
 	}
 
+	@Override
 	public int brandUpdate(newBrand newBrand) {
 		int result = 0;
 		
