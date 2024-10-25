@@ -76,7 +76,11 @@
               <span class="_1-span2">초이닷</span>
             </span>
           </div>
+<<<<<<< HEAD
           <img class="icon-star" src="./main_img/icon-star0.svg" />
+=======
+          <img class="icon-star" src="./img/icon-star0.svg" />
+>>>>>>> refs/heads/main
           <div class="div3">
             청담동
             <br />
@@ -90,8 +94,13 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
+<<<<<<< HEAD
           <img class="icon-like" src="./main_img/icon-like0.svg" />
           <img class="icon-eye" src="./main_img/icon-eye0.svg" />
+=======
+          <img class="icon-like" src="./img/icon-like0.svg" />
+          <img class="icon-eye" src="./img/icon-eye0.svg" />
+>>>>>>> refs/heads/main
         </div>
         <div class="content-22">
           <img class="image-1" src="./main_img/image-11.png" />
@@ -104,7 +113,11 @@
               <span class="_1-span4">초이닷</span>
             </span>
           </div>
+<<<<<<< HEAD
           <img class="icon-star2" src="./main_img/icon-star1.svg" />
+=======
+          <img class="icon-star2" src="./img/icon-star1.svg" />
+>>>>>>> refs/heads/main
           <div class="div3">
             청담동
             <br />
@@ -118,8 +131,13 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
+<<<<<<< HEAD
           <img class="icon-like2" src="./main_img/icon-like1.svg" />
           <img class="icon-eye2" src="./main_img/icon-eye1.svg" />
+=======
+          <img class="icon-like2" src="./img/icon-like1.svg" />
+          <img class="icon-eye2" src="./img/icon-eye1.svg" />
+>>>>>>> refs/heads/main
         </div>
         <div class="content-3">
           <img class="image-1" src="./main_img/image-12.png" />
@@ -132,7 +150,11 @@
               <span class="_1-span6">초이닷</span>
             </span>
           </div>
+<<<<<<< HEAD
           <img class="icon-star3" src="./main_img/./main_img/icon-star2.svg" />
+=======
+          <img class="icon-star3" src="./img/icon-star2.svg" />
+>>>>>>> refs/heads/main
           <div class="div3">
             청담동
             <br />
@@ -146,8 +168,13 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
+<<<<<<< HEAD
           <img class="icon-like3" src="./main_img/icon-like2.svg" />
           <img class="icon-eye3" src="./main_img/icon-eye2.svg" />
+=======
+          <img class="icon-like3" src="./img/icon-like2.svg" />
+          <img class="icon-eye3" src="./img/icon-eye2.svg" />
+>>>>>>> refs/heads/main
         </div>
         <div class="content-4">
           <img class="image-1" src="./main_img/image-13.png" />
@@ -160,7 +187,11 @@
               <span class="_1-span8">초이닷</span>
             </span>
           </div>
+<<<<<<< HEAD
           <img class="icon-star4" src="./main_img/icon-star3.svg" />
+=======
+          <img class="icon-star4" src="./img/icon-star3.svg" />
+>>>>>>> refs/heads/main
           <div class="div3">
             청담동
             <br />
@@ -174,8 +205,13 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
+<<<<<<< HEAD
           <img class="icon-like4" src="./main_img/icon-like3.svg" />
           <img class="icon-eye4" src="./main_img/icon-eye3.svg" />
+=======
+          <img class="icon-like4" src="./img/icon-like3.svg" />
+          <img class="icon-eye4" src="./img/icon-eye3.svg" />
+>>>>>>> refs/heads/main
         </div>
         <div class="content-5">
           <img class="image-1" src="./main_img/image-14.png" />
@@ -188,7 +224,11 @@
               <span class="_1-span10">초이닷</span>
             </span>
           </div>
+<<<<<<< HEAD
           <img class="icon-star5" src="./main_img/icon-star4.svg" />
+=======
+          <img class="icon-star5" src="./img/icon-star4.svg" />
+>>>>>>> refs/heads/main
           <div class="div3">
             청담동
             <br />
@@ -202,21 +242,29 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
+<<<<<<< HEAD
           <img class="icon-like5" src="./main_img/icon-like4.svg" />
           <img class="icon-eye5" src="./main_img/icon-eye4.svg" />
+=======
+          <img class="icon-like5" src="./img/icon-like4.svg" />
+          <img class="icon-eye5" src="./img/icon-eye4.svg" />
+>>>>>>> refs/heads/main
         </div>
         <div class="content-6">
           <img class="image-1" src="./main_img/image-15.png" />
           <div class="_1">
             <span>
               <span class="_1-span11">
-                4.5
-                <br />
-              </span>
+              4.5
+              <br /></span>
               <span class="_1-span12">초이닷</span>
             </span>
           </div>
+<<<<<<< HEAD
           <img class="icon-star6" src="./main_img/icon-star5.svg" />
+=======
+          <img class="icon-star6" src="./img/icon-star5.svg" />
+>>>>>>> refs/heads/main
           <div class="div3">
             청담동
             <br />
@@ -230,8 +278,13 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
+<<<<<<< HEAD
           <img class="icon-like6" src="./main_img/icon-like5.svg" />
           <img class="icon-eye6" src="./main_img/icon-eye5.svg" />
+=======
+          <img class="icon-like6" src="./img/icon-like5.svg" />
+          <img class="icon-eye6" src="./img/icon-eye5.svg" />
+>>>>>>> refs/heads/main
         </div>
       </div>
       <div class="banner">
@@ -381,7 +434,11 @@
           <div class="div29">로그인</div>
           <div class="div30">회원가입</div>
         </div>
+<<<<<<< HEAD
         <img class="my-page" src="./main_img/my-page0.svg" />
+=======
+        <img class="my-page" src="./img/my-page0.svg" />
+>>>>>>> refs/heads/main
         <div class="div31">흑대백(Logo)</div>
       </div>
     </div>
@@ -401,8 +458,13 @@
           <div class="div29">로그인</div>
           <div class="div32">회원가입</div>
         </div>
+<<<<<<< HEAD
         <img class="my-page2" src="my-page1.svg" />
         <img class="_12" src="./main_img/_16.png" />
+=======
+        <img class="my-page2" src="./img/my-page1.svg" />
+        <img class="_12" src="./img/_16.png" />
+>>>>>>> refs/heads/main
       </div>
     </div>
   </div>
