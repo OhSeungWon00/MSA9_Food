@@ -18,6 +18,6 @@ public class Review {
 	private Timestamp regDate; // reg_date에 대응
 	private Timestamp updDate; // upd_date에 대응
 	private long brandId; // brand_id에 대응
-	private long userId; // user_id에 대응
+	private long userId; // userId에 대응
 	private long fileId;
 }
