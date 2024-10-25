@@ -45,24 +45,19 @@
 </head>
 <body>
   <div class="div">
-  	
-  	<form action="<%= request.getContextPath() %>/fileupload/commons" method="post" enctype="multipart/form-data">
-	    <div class="rectangle-14"></div>
-	    <div class="rectangle-15"></div>
-	    <div class="div2">
-	    	<input type="file" name="file" multiple />
-	    	<input type="submit" value="사진등록" />
-	    </div>    
-    </form>
+  
   
     <form class="frame-20" action="newBrand_pro.jsp" method="post" >
     
+      <div class="rectangle-14"></div>
+      <div class="rectangle-15"></div>
       <div class="rectangle-11"></div>
       
       <div class="rectangle-5" >
       	<input class="new_btn" type="submit" value="매장등록"/>
       </div>
       	
+      <div class="div3">사진등록</div>
       
       
       <div class="div4">매장명</div>
