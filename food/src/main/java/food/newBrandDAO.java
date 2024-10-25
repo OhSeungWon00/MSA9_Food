@@ -7,9 +7,9 @@ import food.DTO.newBrand;
 public class newBrandDAO extends BaseDAOImpl<newBrand> {
 
 	@Override
-	public newBrand map(ResultSet arg0) throws Exception {
+	public newBrand map(ResultSet rs) throws Exception {
 		newBrand newbrand = new newBrand();
-		
+		newbrand.setBrandId(rs.getLong("brand_id"));
 		newbrand.setName(rs.getString("name"));
 		newbrand.setLocation(rs.getString("location"));
 		newbrand.setPhone(rs.getString("phone"));
@@ -19,11 +19,11 @@ public class newBrandDAO extends BaseDAOImpl<newBrand> {
 
 	@Override
 	public String pk() {
-		return "name";
+		return "brand_id";
 	}
 
 	@Override
 	public String table() {
-		return "Brand";
+		return "brand";
 	}
 }

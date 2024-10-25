@@ -34,7 +34,7 @@ public class UserServiceImpl implements UserService {
 		/*
 		 * int authResult = 0; UserAuth userAuth = new UserAuth();
 		 * userAuth.setUser_id(user.getUser_id()); userAuth.setAuth("ROLE_USER"); try {
-		 * authResult = userAuthDAO.insert(userAuth, "userId", "auth"); } catch
+		 * authResult = userAuthDAO.insert(userAuth, "user_id", "auth"); } catch
 		 * (Exception e) { e.printStackTrace(); }
 		 */
 		return result;
@@ -50,7 +50,6 @@ public class UserServiceImpl implements UserService {
 			System.out.println(userDAO.select(userId));
 			System.out.println(userId);
 			System.out.println(selectedUser);
-			System.out.println("강사님 지원요청");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -10,14 +10,14 @@ public class UserAuthDAO extends BaseDAOImpl<UserAuth> {
 	@Override
 	public UserAuth map(ResultSet arg0) throws Exception {
 		UserAuth userAuth = new UserAuth();
-		userAuth.setUserId(rs.getString("userID"));
+		userAuth.setUserId(rs.getString("userId"));
 		userAuth.setAuth(rs.getString("Auth"));
 		return userAuth;
 	}
 
 	@Override
 	public String pk() {
-		return "id";
+		return "no";
 	}
 
 	@Override

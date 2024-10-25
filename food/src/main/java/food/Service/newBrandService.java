@@ -1,5 +1,7 @@
 package food.Service;
 
+import java.util.List;
+
 import food.DTO.newBrand;
 
 
@@ -13,6 +15,12 @@ public interface newBrandService {
 	
 	// 매장수정
 	public int brandUpdate(newBrand newBrand);
+
+	// 매장 조회
+	public List<newBrand> list();
+	
+	// 매장 삭제
+	public int delete(newBrand newBrand);
 	
 
 }

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form action="./user/myPage.jsp" method="post">
+<form action="login_pro.jsp" method="post">
 
  <label for="name">아이디</label><br>
         <input type="text" id="userId" name="userId" required><br><br>
