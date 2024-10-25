@@ -1,0 +1,529 @@
+.div,
+.div * {
+  box-sizing: border-box;
+}
+.div {
+  background: #e1e1ff;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+}
+.sidebar {
+  background: #ffffff;
+  width: 180px;
+  height: 550px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.user {
+  background: #7070ff;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 87px;
+  overflow: hidden;
+}
+.user2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  left: 58px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame {
+  width: 13.33%;
+  height: 48%;
+  position: absolute;
+  right: 71.11%;
+  left: 15.56%;
+  bottom: 26%;
+  top: 26%;
+  overflow: visible;
+}
+.review {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 137px;
+  overflow: hidden;
+}
+.review2 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: absolute;
+  left: 59px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame2 {
+  opacity: 0.5;
+  width: 13.33%;
+  height: 48%;
+  position: absolute;
+  right: 71.33%;
+  left: 15.33%;
+  bottom: 26%;
+  top: 26%;
+  overflow: visible;
+}
+.restaurant {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 187px;
+  overflow: hidden;
+}
+.restaurant2 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: absolute;
+  left: 59px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame3 {
+  opacity: 0.5;
+  width: 13.33%;
+  height: 48%;
+  position: absolute;
+  right: 71.33%;
+  left: 15.33%;
+  bottom: 26%;
+  top: 26%;
+  overflow: visible;
+}
+.restaurant3 {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 237px;
+  overflow: hidden;
+}
+.reservation {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: absolute;
+  left: 59px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame4 {
+  opacity: 0.5;
+  width: 13.33%;
+  height: 48%;
+  position: absolute;
+  right: 71.33%;
+  left: 15.33%;
+  bottom: 26%;
+  top: 26%;
+  overflow: visible;
+}
+.div2 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: 88px;
+  top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 22px;
+  top: 12px;
+  object-fit: cover;
+}
+.user-list {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 1134px;
+  height: 413px;
+  position: absolute;
+  left: 242px;
+  top: 87px;
+  overflow: hidden;
+}
+.pagenumber {
+  width: 250px;
+  height: 30px;
+  position: absolute;
+  left: 439px;
+  top: 355px;
+  overflow: hidden;
+}
+.frame5 {
+  opacity: 0.5;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 31px;
+  top: 3px;
+  overflow: visible;
+}
+.frame6 {
+  opacity: 0.5;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 194px;
+  top: 4px;
+  overflow: visible;
+}
+._12 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  left: 72px;
+  top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._2 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Light", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  left: 96px;
+  top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._3 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Light", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  left: 120px;
+  top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._4 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Light", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  left: 144px;
+  top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._5 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Light", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  left: 168px;
+  top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div3 {
+  width: 1134px;
+  height: 413px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.div4 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 92px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div5 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 203px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.id {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 351px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vector-1 {
+  opacity: 0.7;
+  width: 1140px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 53px;
+  transform: translate(0px, -0.5px);
+  overflow: visible;
+}
+.frame-32 {
+  padding: 2px 4px 2px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 555px;
+  position: absolute;
+  left: 18px;
+  top: 57px;
+  overflow: hidden;
+}
+.group-58 {
+  flex-shrink: 0;
+  width: 545px;
+  height: 28px;
+  position: static;
+}
+._13 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 85px;
+  top: 2px;
+  width: 16.6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div6 {
+  color: #000000;
+  text-align: center;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 182px;
+  top: 2px;
+  width: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bsy-7021 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 338px;
+  top: 2px;
+  width: 211px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame7 {
+  width: 25px;
+  height: 24px;
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  overflow: visible;
+}
+.frame8 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 22px;
+  top: 14px;
+  overflow: visible;
+}
+.frame9 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 22px;
+  top: 14px;
+  overflow: visible;
+}
+.sidebar-title {
+  width: 1143px;
+  height: 50px;
+  position: absolute;
+  left: 239px;
+  top: 26px;
+  overflow: hidden;
+}
+.frame10 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+  overflow: visible;
+}
+.user-list2 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 62px;
+  top: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rectangle-35 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  opacity: 0.5;
+  width: 121px;
+  height: 29px;
+  position: absolute;
+  left: 857px;
+  top: 8px;
+}
+.frame11 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 827px;
+  top: 10px;
+  overflow: visible;
+}
+.hi {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 1012px;
+  top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.delete {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 1212px;
+  top: 437px;
+  overflow: hidden;
+}
+.rectangle-36 {
+  background: #ff7070;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.div7 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  left: 36px;
+  top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.modify {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 1093px;
+  top: 437px;
+  overflow: hidden;
+}
+.rectangle-362 {
+  background: #7070ff;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
