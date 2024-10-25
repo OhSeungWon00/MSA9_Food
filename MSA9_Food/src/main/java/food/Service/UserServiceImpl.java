@@ -1,0 +1,141 @@
+package food.Service;
+
+import java.util.List;
+
+import com.alohaclass.jdbc.dto.Page;
+import com.alohaclass.jdbc.dto.PageInfo;
+
+import food.DAO.UserAuthDAO;
+import food.DAO.UserDAO;
+import food.DTO.User;
+import food.utils.PasswordUtils;
+
+public class UserServiceImpl implements UserService {
+
+	UserDAO userDAO = new UserDAO();
+	UserAuthDAO userAuthDAO = new UserAuthDAO();
+
+	@Override
+	public int signup(User user) {
+		int result = 0;
+
+		String enecodedPassword = PasswordUtils.encoded(user.getPassword());
+		user.setPassword(enecodedPassword);
+
+		try {
+			result = userDAO.insert(user, "userId", "password", "name", "email", "phone", "birth");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		if (result == 0) {
+			return 0;
+		}
+		/*
+		 * int authResult = 0; UserAuth userAuth = new UserAuth();
+		 * userAuth.setUser_id(user.getUser_id()); userAuth.setAuth("ROLE_USER"); try {
+		 * authResult = userAuthDAO.insert(userAuth, "user_id", "auth"); } catch
+		 * (Exception e) { e.printStackTrace(); }
+		 */
+		return result;
+	}
+
+	@Override
+	public User login(User user) {
+		String userId = user.getUserId();
+		User selectedUser = null;
+		System.out.println("userId : " + userId);
+		try {
+			selectedUser = userDAO.select(userId);
+			System.out.println(userDAO.select(userId));
+			System.out.println(userId);
+			System.out.println(selectedUser);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		// 회원 가입이 안 된 아이디
+		if (selectedUser == null)
+			return null;
+
+		// 비밀번호 일치 여부 확인
+		String password = selectedUser.getPassword(); // 가입되 비번 (암호화)
+		String loginPassword = user.getPassword(); // 로그인 시도한 비번
+
+		// * BCrypt.checkpw(로그인 비밀번호, 암호된 비밀번호);
+		boolean check = PasswordUtils.check(loginPassword, password);
+
+		// 비밀번호 불일치
+		if (!check)
+			return null;
+		// 로그인 성공
+		return selectedUser;
+	}
+
+	@Override
+	public int delete(User user) {
+		int result = 0;
+		try {
+			result = userDAO.delete(user.getUserId());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	@Override
+	public List<User> list() {
+		List<User> list = null;
+		try {
+			list = userDAO.list();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+	@Override
+	public User select(String userId) {
+		User user = null;
+		try {
+			user = userDAO.select(userId);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+
+	@Override 
+	public int update(User user) {
+		int result = 0;
+		try {
+			result = userDAO.update(user);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	@Override
+	public PageInfo<User> page(int page) {
+		Page pageObj = new Page();
+		pageObj.setPage(page);
+		System.out.println("------------------------------");
+		System.out.println(pageObj);
+		PageInfo<User> pageInfo = null;
+		try {
+			pageInfo = userDAO.page(pageObj);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return pageInfo;
+	}
+
+}
+
+
+
+
+
+
+
