@@ -34,10 +34,14 @@ menu, ol, ul {
 <title>Insert title here</title>
 </head>
 <body>
+
+
+	<h2>매장수정</h2>
+
 	<!--  <form action="updateBrand_pro.jsp" method="post">
     	<input type="text" id= "searchname" name="searchname">
     	<input type="submit" value="검색">
-    </form>  수동검색 -->
+    </form> -->
 
 <body>
 	<div class="div">
