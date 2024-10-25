@@ -11,19 +11,18 @@ public class UserDAO extends BaseDAOImpl<User> {
 	@Override
 	public User map(ResultSet arg0) throws Exception {
 		User user = new User();
-		user.setUserId(rs.getString("user_id"));
+		user.setUserId(rs.getString("userID"));
 		user.setPassword(rs.getString("password"));
 		user.setName(rs.getString("name"));
 		user.setEmail(rs.getString("email"));
 		user.setPhone(rs.getString("phone"));
 		user.setBirth(rs.getString("birth"));
-		user.setIntro(rs.getString("intro"));
 		return user;
 	}
 
 	@Override
 	public String pk() {
-		return "user_id";
+		return "userID";
 	}
 
 	@Override
