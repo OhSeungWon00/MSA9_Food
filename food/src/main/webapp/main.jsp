@@ -49,24 +49,24 @@
       <div class="content-2">
         <div class="content-title">Best Restaurant</div>
         <div class="content-2-1">
-          <img class="image-2" src="./img/image-20.png" />
+          <img class="image-2" src="./main_img/image-20.png" />
           <div class="div2">한국 최초 여성 중식 스타 셰프...</div>
         </div>
         <div class="content-2-2">
-          <img class="image-2" src="./img/image-21.png" />
+          <img class="image-2" src="./main_img/image-21.png" />
           <div class="div2">한국 최초 여성 중식 스타 셰프...</div>
         </div>
         <div class="content-2-3">
-          <img class="image-2" src="./img/image-22.png" />
+          <img class="image-2" src="./main_img/image-22.png" />
           <div class="div2">한국 최초 여성 중식 스타 셰프...</div>
         </div>
-        <img class="frame" src="frame0.svg" />
-        <img class="frame2" src="frame1.svg" />
+        <img class="frame" src="./main_img/frame0.svg" />
+        <img class="frame2" src="./main_img/frame1.svg" />
       </div>
       <div class="content">
         <div class="content-title2">Black and White Chef</div>
         <div class="content-1">
-          <img class="image-1" src="./img/image-10.png" />
+          <img class="image-1" src="./main_img/image-10.png" />
           <div class="_1">
             <span>
               <span class="_1-span">
@@ -76,7 +76,7 @@
               <span class="_1-span2">초이닷</span>
             </span>
           </div>
-          <img class="icon-star" src="icon-star0.svg" />
+          <img class="icon-star" src="./main_img/icon-star0.svg" />
           <div class="div3">
             청담동
             <br />
@@ -90,11 +90,11 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like" src="icon-like0.svg" />
-          <img class="icon-eye" src="icon-eye0.svg" />
+          <img class="icon-like" src="./main_img/icon-like0.svg" />
+          <img class="icon-eye" src="./main_img/icon-eye0.svg" />
         </div>
         <div class="content-22">
-          <img class="image-1" src="./img/image-11.png" />
+          <img class="image-1" src="./main_img/image-11.png" />
           <div class="_1">
             <span>
               <span class="_1-span3">
@@ -104,7 +104,7 @@
               <span class="_1-span4">초이닷</span>
             </span>
           </div>
-          <img class="icon-star2" src="icon-star1.svg" />
+          <img class="icon-star2" src="./main_img/icon-star1.svg" />
           <div class="div3">
             청담동
             <br />
@@ -118,11 +118,11 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like2" src="icon-like1.svg" />
-          <img class="icon-eye2" src="icon-eye1.svg" />
+          <img class="icon-like2" src="./main_img/icon-like1.svg" />
+          <img class="icon-eye2" src="./main_img/icon-eye1.svg" />
         </div>
         <div class="content-3">
-          <img class="image-1" src="./img/image-12.png" />
+          <img class="image-1" src="./main_img/image-12.png" />
           <div class="_1">
             <span>
               <span class="_1-span5">
@@ -132,7 +132,7 @@
               <span class="_1-span6">초이닷</span>
             </span>
           </div>
-          <img class="icon-star3" src="icon-star2.svg" />
+          <img class="icon-star3" src="./main_img/./main_img/icon-star2.svg" />
           <div class="div3">
             청담동
             <br />
@@ -146,11 +146,11 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like3" src="icon-like2.svg" />
-          <img class="icon-eye3" src="icon-eye2.svg" />
+          <img class="icon-like3" src="./main_img/icon-like2.svg" />
+          <img class="icon-eye3" src="./main_img/icon-eye2.svg" />
         </div>
         <div class="content-4">
-          <img class="image-1" src="./img/image-13.png" />
+          <img class="image-1" src="./main_img/image-13.png" />
           <div class="_1">
             <span>
               <span class="_1-span7">
@@ -160,7 +160,7 @@
               <span class="_1-span8">초이닷</span>
             </span>
           </div>
-          <img class="icon-star4" src="icon-star3.svg" />
+          <img class="icon-star4" src="./main_img/icon-star3.svg" />
           <div class="div3">
             청담동
             <br />
@@ -174,11 +174,11 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like4" src="icon-like3.svg" />
-          <img class="icon-eye4" src="icon-eye3.svg" />
+          <img class="icon-like4" src="./main_img/icon-like3.svg" />
+          <img class="icon-eye4" src="./main_img/icon-eye3.svg" />
         </div>
         <div class="content-5">
-          <img class="image-1" src="./img/image-14.png" />
+          <img class="image-1" src="./main_img/image-14.png" />
           <div class="_1">
             <span>
               <span class="_1-span9">
@@ -188,7 +188,7 @@
               <span class="_1-span10">초이닷</span>
             </span>
           </div>
-          <img class="icon-star5" src="icon-star4.svg" />
+          <img class="icon-star5" src="./main_img/icon-star4.svg" />
           <div class="div3">
             청담동
             <br />
@@ -202,11 +202,11 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like5" src="icon-like4.svg" />
-          <img class="icon-eye5" src="icon-eye4.svg" />
+          <img class="icon-like5" src="./main_img/icon-like4.svg" />
+          <img class="icon-eye5" src="./main_img/icon-eye4.svg" />
         </div>
         <div class="content-6">
-          <img class="image-1" src="./img/image-15.png" />
+          <img class="image-1" src="./main_img/image-15.png" />
           <div class="_1">
             <span>
               <span class="_1-span11">
@@ -216,7 +216,7 @@
               <span class="_1-span12">초이닷</span>
             </span>
           </div>
-          <img class="icon-star6" src="icon-star5.svg" />
+          <img class="icon-star6" src="./main_img/icon-star5.svg" />
           <div class="div3">
             청담동
             <br />
@@ -230,22 +230,22 @@
           </div>
           <div class="eye">12487</div>
           <div class="like">9567</div>
-          <img class="icon-like6" src="icon-like5.svg" />
-          <img class="icon-eye6" src="icon-eye5.svg" />
+          <img class="icon-like6" src="./main_img/icon-like5.svg" />
+          <img class="icon-eye6" src="./main_img/icon-eye5.svg" />
         </div>
       </div>
       <div class="banner">
         <div class="banner-1">
-          <img class="bannerimg-1" src="./img/bannerimg-10.png" />
-          <img class="bannerimg-2" src="./img/bannerimg-20.png" />
+          <img class="bannerimg-1" src="./main_img/bannerimg-10.png" />
+          <img class="bannerimg-2" src="./main_img/bannerimg-20.png" />
         </div>
       </div>
     </div>
     <div class="footer">
       <div class="list">
-        <img class="item-link" src="./img/item-link0.png" />
-        <img class="item-link2" src="./img/item-link1.png" />
-        <img class="item-link3" src="./img/item-link2.png" />
+        <img class="item-link" src="./main_img/item-link0.png" />
+        <img class="item-link2" src="./main_img/item-link1.png" />
+        <img class="item-link3" src="./main_img/item-link2.png" />
       </div>
       <div class="container">
         <div class="container2">
@@ -295,15 +295,15 @@
             <div class="div18">
               <div class="div19">마케팅・광고・제휴 문의</div>
               <div class="svg">
-                <img class="vector" src="vector0.svg" />
-                <img class="mask-group" src="mask-group0.svg" />
+                <img class="vector" src="./main_img/vector0.svg" />
+                <img class="mask-group" src="./main_img/mask-group0.svg" />
               </div>
             </div>
             <div class="div20">
               <div class="div21">서비스 이용 문의</div>
               <div class="svg2">
-                <img class="vector2" src="vector1.svg" />
-                <img class="mask-group2" src="mask-group1.svg" />
+                <img class="vector2" src="./main_img/vector1.svg" />
+                <img class="mask-group2" src="./main_img/mask-group1.svg" />
               </div>
             </div>
           </div>
@@ -368,7 +368,7 @@
             <div class="item-link9">이용권</div>
           </div>
           <div class="fieldset">
-            <img class="image" src="./img/image0.png" />
+            <img class="image" src="./main_img/image0.png" />
             <div class="input">
               <div class="container7">
                 <div class="div27">검색어를 입력하세요.</div>
@@ -381,7 +381,7 @@
           <div class="div29">로그인</div>
           <div class="div30">회원가입</div>
         </div>
-        <img class="my-page" src="my-page0.svg" />
+        <img class="my-page" src="./main_img/my-page0.svg" />
         <div class="div31">흑대백(Logo)</div>
       </div>
     </div>
@@ -389,7 +389,7 @@
       <div class="container5">
         <div class="container8">
           <div class="fieldset2">
-            <img class="image" src="./img/image1.png" />
+            <img class="image" src="./main_img/image1.png" />
             <div class="input">
               <div class="container7">
                 <div class="div27">검색어를 입력하세요.</div>
@@ -402,7 +402,7 @@
           <div class="div32">회원가입</div>
         </div>
         <img class="my-page2" src="my-page1.svg" />
-        <img class="_12" src="./img/_16.png" />
+        <img class="_12" src="./main_img/_16.png" />
       </div>
     </div>
   </div>
