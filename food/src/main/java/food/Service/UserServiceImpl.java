@@ -2,6 +2,9 @@ package food.Service;
 
 import java.util.List;
 
+import com.alohaclass.jdbc.dto.Page;
+import com.alohaclass.jdbc.dto.PageInfo;
+
 import food.DAO.UserAuthDAO;
 import food.DAO.UserDAO;
 import food.DTO.User;
@@ -20,7 +23,7 @@ public class UserServiceImpl implements UserService {
 		user.setPassword(enecodedPassword);
 
 		try {
-			result = userDAO.insert(user, "userId", "password", "name", "email", "phone");
+			result = userDAO.insert(user, "userId", "password", "name", "email", "phone", "birth");
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -91,4 +94,49 @@ public class UserServiceImpl implements UserService {
 		}
 		return list;
 	}
+
+	@Override
+	public User select(String userId) {
+		User user = null;
+		try {
+			user = userDAO.select(userId);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+
+	@Override 
+	public int update(User user) {
+		int result = 0;
+		try {
+			result = userDAO.update(user);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	@Override
+	public PageInfo<User> page(int page) {
+		Page pageObj = new Page();
+		pageObj.setPage(page);
+		System.out.println("------------------------------");
+		System.out.println(pageObj);
+		PageInfo<User> pageInfo = null;
+		try {
+			pageInfo = userDAO.page(pageObj);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return pageInfo;
+	}
+
 }
+
+
+
+
+
+
+

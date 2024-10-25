@@ -1,11 +1,6 @@
 package food.DAO;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 import com.alohaclass.jdbc.dao.BaseDAOImpl;
 
@@ -16,22 +11,30 @@ public class UserDAO extends BaseDAOImpl<User> {
 	@Override
 	public User map(ResultSet arg0) throws Exception {
 		User user = new User();
-		user.setUserId(rs.getString("userId"));
+		user.setUserId(rs.getString("user_id"));
 		user.setPassword(rs.getString("password"));
 		user.setName(rs.getString("name"));
 		user.setEmail(rs.getString("email"));
 		user.setPhone(rs.getString("phone"));
+		user.setBirth(rs.getString("birth"));
+		user.setIntro(rs.getString("intro"));
 		return user;
 	}
 
 	@Override
 	public String pk() {
-		return "userId";
+		return "user_id";
 	}
 
 	@Override
 	public String table() {
 		return "user";
 	}
+	
+	
+	
+	
 
+	
+	
 }

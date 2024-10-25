@@ -15,15 +15,19 @@
 	User user = User.builder()
 					.userId(userId)
 					.build();
-	int result = userService.delete(user);
+	int result = userService.update(user);
 	
 	String root = request.getContextPath();
 	if( result > 0 ) {
-		response.sendRedirect(root + "/admin/user/index.jsp");
+		response.sendRedirect(root + "/admin/user/main.jsp");
 	}
 	else {
 		response.sendRedirect(root + "/admin/user/index.jsp?error=edit");
 	}
+	
+	
+	
+	
 	
 	
 
