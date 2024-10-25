@@ -26,7 +26,6 @@ public class newBrandServiceImpl implements newBrandService{
 		return result;
 	}
 
-	@Override
 	public newBrand search(newBrand newbrand) {
 		String name = newbrand.getName();
 		newBrand selectedBrandName = null;
@@ -40,7 +39,6 @@ public class newBrandServiceImpl implements newBrandService{
 			return selectedBrandName;
 	}
 
-	@Override
 	public int brandUpdate(newBrand newBrand) {
 		int result = 0;
 		
