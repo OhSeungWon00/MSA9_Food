@@ -11,8 +11,8 @@ $(document).ready(function () {
 			{
 				left:-600+"px"
 			}
-		,500,function(){
-			$(this).append($(".banner-img:nth-of-type("+count+")").clone())
+		,2000,function(){
+			$(this).append($(".banner-img:first-of-type()").clone())
 			if($(".banner-img").length > 4) {
 				$(this).children(".banner-img:first-of-type()").remove()
 				$(this).css({
@@ -22,5 +22,5 @@ $(document).ready(function () {
 		})
 		
 	}
-	,500)
+	,5000)
 });
