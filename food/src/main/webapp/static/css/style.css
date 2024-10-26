@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 .header,
 .header * {
   box-sizing: border-box;
@@ -129,11 +128,26 @@
 }
 
 .container{
+	margin:0 auto;
 	margin-top: 150px;
+	overflow: hidden;
+	width: 1200px;
+	height: 350px;
+	position: relative;
+}
+.banner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(600px * 5); /* 원래 이미지 4개 + 복제된 1개 */
+    position: absolute;
+    top:0;
+    left:0;
 }
 
-
-
+.banner > div {
+    min-width: 600px;
+    height: 350px;
+}
 
 /* 공통 스타일 */
 footer {
@@ -250,5 +264,6 @@ section {
 	width: 100%;
 	height: 70px;
 	background-color: #7070ff;
+	background-repeat:repeat;
 	margin-bottom: 0;
 }
