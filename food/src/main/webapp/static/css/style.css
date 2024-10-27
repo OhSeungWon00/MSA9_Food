@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-.header,
+body{
+	display: column;
+}
 .header * {
   box-sizing: border-box;
 }
@@ -15,6 +17,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 .logo {
   flex-shrink: 0;
@@ -128,12 +131,12 @@
 }
 
 .container{
-	margin:0 auto;
-	margin-top: 150px;
+	margin: 0 auto;
 	overflow: hidden;
 	width: 1200px;
 	height: 350px;
 	position: relative;
+	z-index: 1;
 }
 .banner {
     display: flex;

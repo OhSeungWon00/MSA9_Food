@@ -1,50 +1,73 @@
-@charset "UTF-8";
- body {
-            background-color: #E1E1FF;
-            font-family: Arial, sans-serif;
-            margin:0;
-}
-.container {
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E1E1FF;
+    margin: 0;
+    padding: 0;
     display: flex;
 }
-.container ul{
-	
-}
-.container ul li{
 
-}
-.sidebar {
-	background-color: white;
-    width: 15%;
+/* 컨테이너 스타일 */
+.container {
+    margin: 0 auto;
     padding: 20px;
+    width: 85%;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
     height: 100vh;
+    background-color: white;
+    padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
+
+.sidebar_logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo {
+    width: 50px;
+    height: 50px;
+}
+
 .sidebar ul {
-    list-style-type: none;
-    padding: 10px;
+    list-style: none;
+    padding: 0;
 }
+
 .sidebar ul li {
-	width: 80%;
-    margin: 20px 0;
-    padding: 20px;
+    margin: 20px 0 20px 0;
+    padding-left: 10%;
+    text-align: left;
+    padding: 15px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.sidebar ul li:hover{
-	background-color: #7070ff;
-	cursor: pointer;
+
+.sidebar ul li:hover {
+    background-color: #7070ff;
 }
-.sidebar ul li:hover a {
-	color:white;
-}
+
 .sidebar ul li a {
     text-decoration: none;
     color: #333;
     font-size: 90%;
 }
+
+.sidebar ul li:hover a {
+    color: white;
+}
 .content {
     width: 85%;
     padding: 20px;
+    margin-left: 15%;
 }
 .header {
     display: flex;
