@@ -51,12 +51,12 @@ menu, ol, ul {
 				<div class="div4">비밀번호</div>
 				<input class="rectangle-1592" type="password" id="password"
 					name="password" required><br> <br>
-				<div class="div5">비밀번호 확인</div>
 				<div class="c">
+					<div class="div5">비밀번호 확인</div>
 					<input class="rectangle-1593" type="password" id="password2"
 						name="password2" required>
 					<c:if test="${param.error == 0 }">
-						<p style="color: red;">비밀번호가 다릅니다</p>
+						<p class="rectangle-1593" style="color: red;">비밀번호가 다릅니다</p>
 					</c:if>
 				</div>
 				<br> <br>

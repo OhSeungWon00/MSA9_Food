@@ -50,6 +50,7 @@
 </head>
 <body>
   <div class="div">
+
   	<form action="<%= root %>/user/update_pro.jsp" method="post">
 	    <div class="main">
 	      <input class="rectangle-142" type="text" value="<%=loginId%>">
@@ -57,10 +58,7 @@
 	      <img class="rectangle-145" src="<%= root %>/static/svg/rectangle-1450.svg" />
 	      <div class="rectangle-144"></div>
 	      <div class="rectangle-143"></div>
-<<<<<<< HEAD
 	      <!-- 안녕하세요. bsy7021입니다. -->
-=======
->>>>>>> branch 'jojo' of https://github.com/OhSeungWon00/MSA9_Food.git
 	      <img class="frame2" src="<%= root %>/static/svg/frame1.svg" />
 	      <div class="div2">회원정보변경</div>
 	      <div class="_2-4">*2~4자 이내, 공백불가능, 한글가능</div>
@@ -91,7 +89,8 @@
 	        <img class="_1" src="<%= root %>/static/svg/_10.png" />
 	      </div>
 	    </div>
-	   	    <input class="rectangle-32" type="text" name="userId" value="<%=user.getUserId() %>" />
+	   	    <input class="rectangle-32" type="hidden" name="userId" value="<%=user.getUserId() %>" />
+	   	    <p class="rectangle-32"><%=user.getUserId() %></p>
 	   	    <input class="rectangle-33" type="text" name="" />
 	   		<input class="rectangle-34" type="text" name="name" value="<%=user.getName() %>"/>
 	   		<input class="rectangle-35" type="text" name="email" value="<%=user.getEmail() %>"/>
@@ -100,7 +99,7 @@
 	        <button type="submit" class="div13" >수정</button>
 	    </form>
 	    
-	    <form action="main.jsp">
+	    <form action="../myPage.jsp">
 		    <input class="div14" type="submit" value="취소">
 	    </form>
   </div>

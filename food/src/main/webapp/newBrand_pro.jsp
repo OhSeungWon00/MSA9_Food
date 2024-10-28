@@ -36,7 +36,7 @@
     
     // 매장등록 성공
     if(result > 0){
-    	response.sendRedirect("index.jsp");
+    	response.sendRedirect("invenBrand.jsp");
     }
     // 매장등록 실패
     else{

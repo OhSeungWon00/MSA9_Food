@@ -1,3 +1,7 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="org.apache.commons.fileupload.DiskFileUpload"%>
+<%@page import="org.apache.commons.fileupload.FileItem"%>
+<%@page import="java.util.List"%>
 <%@page import="food.DTO.newBrand"%>
 <%@page import="food.Service.newBrandServiceImpl"%>
 <%@page import="food.Service.newBrandService"%>
@@ -10,15 +14,20 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 	response.setCharacterEncoding("UTF-8");
+	/* String brandId = request.getParameter("brandId"); */
+	/* Long brandId = Long.parseLong(request.getParameter("brandId")); */
 	
+	
+	
+	String brandId = request.getParameter("brandId");
 	String name = request.getParameter("name");
 	String location = request.getParameter("location");
 	String phone = request.getParameter("phone");
 	String content = request.getParameter("content");
 	
 
-	
 	newBrand newbrand = newBrand.builder()
+						.brandId(Long.parseLong(brandId))
 						.name(name)
 						.location(location)
 						.phone(phone)
@@ -33,11 +42,11 @@
 	out.print(result); */
 			
 		
-	 // 매장등록 성공
+	 // 매장수정 성공
 	if(result > 0){
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("invenBrand.jsp");
 	}
-	// 매장등록 실패
+	// 매장수정 실패
 	else{
 		response.sendRedirect("updateBrand.jsp?error=0");
 	}
