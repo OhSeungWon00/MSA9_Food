@@ -1,3 +1,9 @@
+<%@page import="food.DTO.User"%>
+<%@page import="java.util.List"%>
+<%@page import="food.Service.UserServiceImpl"%>
+<%@page import="food.Service.UserService"%>
+<%@ include file="/layout/jstl.jsp" %>
+<%@ include file="/layout/common.jsp" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
@@ -12,7 +18,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/mypage1.css">
   <link rel="stylesheet" href="./css/mypage2.css">
-  
+  <%
+    UserService userService =  new UserServiceImpl();
+    List<User> userList = userService.list();
+    User user = userService.select(loginId);
+%>
   
   <style>
    a,
@@ -61,8 +71,8 @@
       </form>
       
       
-      <div class="bsy-7021">bsy7021</div>
-      <div class="bsy-70212">안녕하세요. bsy7021 입니다.</div>
+      <div class="bsy-7021">${user.getUserId() }</div>
+      <div class="bsy-70212">안녕하세요. ${user.getUserId()} 입니다.</div>
       <img class="rectangle-32" src="./mypage_img/rectangle-320.svg" />
       <img class="rectangle-33" src="./mypage_img/rectangle-330.svg" />
       <img class="rectangle-34" src="./mypage_img/rectangle-340.svg" />
@@ -85,14 +95,14 @@
         <img class="frame2" src="./mypage_img/frame1.svg" />
       </div>
       <img class="vector-13" src="./mypage_img/vector-130.svg" />
-      <div class="bsy-70213">${userId }</div>
+      <div class="bsy-70213">${ user.getUserId() }</div>
       <div class="div16">**********</div>
-      <div class="div17">${name }</div>
-      <div class="_010-5208-3996">${phone }</div>
-      <div class="bsy-7021-naver-com">${email}</div>
-      <div class="_1994-07-21"></div>
+      <div class="div17">${user.getName() }</div>
+      <div class="_010-5208-3996">${user.getPhone() }</div>
+      <div class="bsy-7021-naver-com">${user.getEmail() }</div>
+      <div class="_1994-07-21">${user.getBirth()}</div>
       <div class="div18"></div>
-      <div class="_2024-10-22">${yyyy-dd-mm}</div>
+      <div class="_2024-10-22"></div>
       <div class="div19">매장명</div>
       <div class="_520">520명</div>
     </div>
