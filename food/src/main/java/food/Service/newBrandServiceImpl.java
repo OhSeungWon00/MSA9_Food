@@ -4,7 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.alohaclass.jdbc.dto.Page;
+import com.alohaclass.jdbc.dto.PageInfo;
+
 import food.DAO.newBrandDAO;
+import food.DTO.User;
 import food.DTO.newBrand;
 
 public class newBrandServiceImpl implements newBrandService{
@@ -92,7 +96,25 @@ public class newBrandServiceImpl implements newBrandService{
 				
 		return result;
 	}
-	
+
+	@Override
+	public PageInfo<newBrand> page(int page) {
+		Page pageObj = new Page();
+		pageObj.setPage(page);
+		pageObj.setSize(7);
+        System.out.println("------------------------------");
+        System.out.println(pageObj);
+        PageInfo<newBrand> pageInfo = null;
+        try {
+			pageInfo = newbrandDAO.page(pageObj);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+        return pageInfo;
+	}
+
+
+
 
 
 

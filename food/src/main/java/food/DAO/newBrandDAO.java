@@ -1,6 +1,8 @@
 package food.DAO;
 
 import java.sql.ResultSet;
+import java.util.List;
+
 import com.alohaclass.jdbc.dao.BaseDAOImpl;
 import food.DTO.newBrand;
 
@@ -25,5 +27,10 @@ public class newBrandDAO extends BaseDAOImpl<newBrand> {
 	@Override
 	public String table() {
 		return "brand";
+	}
+	
+	
+	public void findByPage(int start, int pageSize) {
+	    String sql = "SELECT * FROM brand LIMIT ?, ?";
 	}
 }

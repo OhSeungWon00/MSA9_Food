@@ -2,6 +2,8 @@ package food.Service;
 
 import java.util.List;
 
+import com.alohaclass.jdbc.dto.PageInfo;
+
 import food.DTO.newBrand;
 
 
@@ -23,4 +25,5 @@ public interface newBrandService {
 	public int delete(newBrand newBrand);
 	
 
+	public PageInfo<newBrand> page(int page);
 }
