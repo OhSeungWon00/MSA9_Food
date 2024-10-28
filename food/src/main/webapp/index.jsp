@@ -166,7 +166,7 @@
 	        </div>
 	    </div>
 	</div>
-	<div class="test">asdasd</div>
+	<div class="test">asdasdasd</div>
 	<div class="underLine-up"></div>
 	<%-- [Contents] ######################################################### --%>
 	<jsp:include page="/layout/footer.jsp" />
