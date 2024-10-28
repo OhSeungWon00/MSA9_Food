@@ -45,10 +45,10 @@ menu, ol, ul {
 <body>
 	<div class="div">
 		<div class="sidebar">
-			<div class="user">
+			<button class="user" onclick="location.href='./admin/user/delete.jsp'">
 				<div class="user2">User</div>
 				<img class="frame" src="./invenBrand_img/frame0.svg" />
-			</div>
+			</button>
 			<div class="review">
 				<div class="review2">Review</div>
 				<img class="frame2" src="./invenBrand_img/frame1.svg" />

@@ -127,8 +127,6 @@
   align-items: center;
   justify-content: flex-start;
 }
-<<<<<<< HEAD
-=======
 .signbtn {
   border: 1px solid #000000;
   border-radius: 20px;
@@ -470,7 +468,6 @@
   top: 139px;
   object-fit: cover;
 }
-=======
 .div,
 * {
   box-sizing: border-box;
@@ -600,7 +597,6 @@
   align-items: center;
   justify-content: flex-start;
 }
->>>>>>> branch 'main' of https://github.com/OhSeungWon00/MSA9_Food.git
 .div10 {
   background : white;
   border-radius: 10px;
@@ -947,4 +943,8 @@
   top: 139px;
   object-fit: cover;
   border-radius: 50%;
+}
+.c{
+	display: flex;
+	
 }

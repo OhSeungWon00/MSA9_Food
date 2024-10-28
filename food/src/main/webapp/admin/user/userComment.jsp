@@ -16,7 +16,7 @@
 
 
 
- <label for="name">댓글창</label><br>
+ 		<label for="name">댓글창</label><br>
         <input type="text" id="userId" name="userId" required><br><br>
 
 

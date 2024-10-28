@@ -27,10 +27,10 @@
 	int result = userService.update(user);
 	
 	if( result > 0 ) {
-		response.sendRedirect(root + "/user/myPageUpdate.jsp");
+		response.sendRedirect(root + "/myPage.jsp");
 	}
 	else {
-		response.sendRedirect(root + "/user/myPageUpdate.jsp?error");
+		response.sendRedirect(root + "/user/myPageupdate.jsp?error");
 	}
 	
 %>

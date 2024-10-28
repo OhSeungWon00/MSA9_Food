@@ -24,6 +24,6 @@ public class newBrandDAO extends BaseDAOImpl<newBrand> {
 
 	@Override
 	public String table() {
-		return "Brand";
+		return "brand";
 	}
 }

@@ -52,7 +52,7 @@ public class newBrandServiceImpl implements newBrandService{
 		
 		try {
 			result = newbrandDAO.update(newBrand);
-			System.out.println(newBrand.getName());
+			System.out.println("Brand -- " + newBrand);
 			System.out.println("update 성공");
 			
 		} catch (Exception e) {

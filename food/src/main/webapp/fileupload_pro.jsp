@@ -78,7 +78,7 @@
 			out.println("파일 컨텐츠 타입 : " + contentType + "<br>");
 			out.println("파일 크기 : " + fileSize + "<br>");
 			
-			System.out.println("searchname : " + searchname);
+//			System.out.println("searchname : " + searchname);
 // 			System.out.println("PK2 : " + searchname);
 			
  			response.sendRedirect("updateBrand_pro.jsp?searchname=" + URLEncoder.encode(searchname, "UTF-8"));

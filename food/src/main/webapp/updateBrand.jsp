@@ -66,7 +66,7 @@ menu, ol, ul {
 			<img class="frame5" src="./invenBrand_img/frame4.svg" />
 
 			<form action="updateBrand_pro2.jsp" method="post" >
-
+				<input type="hidden" name="brandId" value="${ brandId }"/>
 				<div class="div5">매장명</div>
 				<input class="rectangle-44" type="text" id="name" name="name" value="${ name }">
 				<div class="div6">주소</div>

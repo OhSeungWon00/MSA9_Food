@@ -10,8 +10,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/newBrand1.css">
-  <link rel="stylesheet" href="./css/newBrand2.css">
+  <link rel="stylesheet" href="./css/newbrand1.css">
+  <link rel="stylesheet" href="./css/newbrand2.css">
   
   
   <style>
@@ -45,54 +45,48 @@
 </head>
 <body>
   <div class="div">
-  
-  
-    <form class="frame-20" action="newBrand_pro.jsp" method="post" >
-    
-      <div class="rectangle-14"></div>
-      <div class="rectangle-15"></div>
-      <div class="rectangle-11"></div>
-      
-      <div class="rectangle-5" >
-      	<input class="new_btn" type="submit" value="매장등록"/>
+    <div class="sidebar">
+      <div class="user">
+        <div class="user2">User</div>
+        <img class="frame" src="./newbrand_img/frame0.svg" />
       </div>
-      	
-      <div class="div3">사진등록</div>
-      
-      
-      <div class="div4">매장명</div>
-      <div class="div5"><input type="text" name="name" id="name"/></div>
-      
-      
-      <div class="div6">주소</div>
-      <div class="group-37">
-        <div class="rectangle-12"></div>
-        <div class="_177-27"><input type="text" name="location" id="location"/></div>
+      <div class="review">
+        <div class="review2">Review</div>
+        <img class="frame2" src="./newbrand_img/frame1.svg" />
       </div>
-      
-      <div class="rectangle-13"></div>
-      <div class="div8">전화번호</div>
-      <div class="_032-5656-5656"><input type="text" name="phone" id="phone"></div>
-      <div class="div7">매장설명</div>
-      
-        <textarea class="_3" rows="5" cols="40" name = "content" id="content" style="background-color: white;"></textarea>
-      
-    </form>
+      <div class="restaurant">
+        <div class="restaurant2">Restaurant</div>
+        <img class="frame3" src="./newbrand_img/frame2.svg" />
+      </div>
+      <div class="restaurant3">
+        <div class="reservation">Reservation</div>
+        <img class="frame4" src="./newbrand_img/frame3.svg" />
+      </div>
+      <div class="div2">사이트명</div>
+      <img class="_1" src="./newbrand_img/_10.png" />
+    </div>
+    <div class="review-list">
     
-    
-    
-    <!--  서브메뉴 -->
-    <div class="frame-18">
-      <div class="rectangle-1"></div>
-      <div class="div9">회원관리</div>
-      <div class="rectangle-17"></div>
-      <div class="div10">리뷰관리</div>
-      <div class="rectangle-18"></div>
-      <div class="div11">매장관리</div>
-      <div class="rectangle-19"></div>
-      <div class="div12">예약관리</div>
+      <form action="newBrand_pro.jsp" method="post" >
+	      <div class="div3">매장명</div>
+	      <input class="rectangle-44" type="text" name="name" id="name"/>
+	      <div class="div4">주소</div>
+	      <input class="rectangle-45" type="text" name="location" id="location"/>
+	      <div class="div5">전화번호</div>
+	      <input class="rectangle-46" type="text" name="phone" id="phone">
+	      <div class="div6">매장설명</div>
+	      <textarea class="rectangle-47" rows="5" cols="40" name = "content" id="content" style="background-color: white;"></textarea>
+      <input class="rectangle-50" type="submit" value="매장등록"/>
+      </form>
+    </div>
+    <div class="sidebar-title">
+      <img class="frame5" src="./newbrand_img/frame4.svg" />
+      <div class="restaurant-list-upload">RestaurantList &gt; Upload</div>
+      <div class="rectangle-35"></div>
+      <img class="frame6" src="./newbrand_img/frame5.svg" />
+      <div class="hi">Hi, 관리자님</div>
     </div>
   </div>
-  
 </body>
+
 </html>

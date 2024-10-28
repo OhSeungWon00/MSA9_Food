@@ -186,64 +186,7 @@
   top: 87px;
   overflow: hidden;
 }
-.rectangle-43 {
-  background: #ffffff;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  left: 634px;
-  top: 48px;
-}
-.rectangle-48 {
-  background: #ffffff;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px;
-  width: 150px;
-  height: 20px;
-  position: absolute;
-  left: 634px;
-  top: 219px;
-}
-.frame5 {
-  opacity: 0.5;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  left: 763px;
-  top: 222px;
-  overflow: visible;
-}
 .div3 {
-  color: #000000;
-  text-align: left;
-  font-family: "NotoSansKr-Light", sans-serif;
-  font-size: 10px;
-  font-weight: 300;
-  position: absolute;
-  left: 639px;
-  top: 222px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div4 {
-  color: #000000;
-  text-align: left;
-  font-family: "NotoSansKr-Bold", sans-serif;
-  font-size: 10px;
-  font-weight: 700;
-  position: absolute;
-  left: 634px;
-  top: 201px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.div5 {
   color: #000000;
   text-align: left;
   font-family: "NotoSansKr-Bold", sans-serif;
@@ -256,7 +199,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.div6 {
+.div4 {
   color: #000000;
   text-align: left;
   font-family: "NotoSansKr-Bold", sans-serif;
@@ -269,7 +212,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.div7 {
+.div5 {
   color: #000000;
   text-align: left;
   font-family: "NotoSansKr-Bold", sans-serif;
@@ -282,7 +225,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.div8 {
+.div6 {
   color: #000000;
   text-align: left;
   font-family: "NotoSansKr-Bold", sans-serif;
@@ -339,17 +282,6 @@
   left: 167px;
   top: 219px;
 }
-.rectangle-49 {
-  background: #7070ff;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px;
-  width: 150px;
-  height: 20px;
-  position: absolute;
-  left: 634px;
-  top: 245px;
-}
 .rectangle-50 {
   background: #7070ff;
   border-style: solid;
@@ -361,20 +293,7 @@
   left: 634px;
   top: 357px;
 }
-.div9 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "NotoSansKr-Bold", sans-serif;
-  font-size: 10px;
-  font-weight: 700;
-  position: absolute;
-  left: 690px;
-  top: 247px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.div10 {
+.div7 {
   color: #ffffff;
   text-align: center;
   font-family: "NotoSansKr-Bold", sans-serif;
@@ -395,7 +314,7 @@
   top: 26px;
   overflow: hidden;
 }
-.frame6 {
+.frame5 {
   width: 2.1%;
   height: 48%;
   position: absolute;
@@ -405,7 +324,7 @@
   top: 26%;
   overflow: visible;
 }
-.restaurant-list-modify {
+.restaurant-list-upload {
   color: #000000;
   text-align: left;
   font-family: "NotoSansKr-Bold", sans-serif;
@@ -431,7 +350,7 @@
   left: 857px;
   top: 8px;
 }
-.frame7 {
+.frame6 {
   width: 24px;
   height: 24px;
   position: absolute;

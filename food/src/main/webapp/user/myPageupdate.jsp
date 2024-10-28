@@ -50,6 +50,7 @@
 </head>
 <body>
   <div class="div">
+
   	<form action="<%= root %>/user/update_pro.jsp" method="post">
 	    <div class="main">
 	      <input class="rectangle-142" type="text" value="<%=loginId%>">
@@ -88,7 +89,8 @@
 	        <img class="_1" src="<%= root %>/static/svg/_10.png" />
 	      </div>
 	    </div>
-	   	    <input class="rectangle-32" type="text" name="userId" value="<%=user.getUserId() %>" />
+	   	    <input class="rectangle-32" type="hidden" name="userId" value="<%=user.getUserId() %>" />
+	   	    <p class="rectangle-32"><%=user.getUserId() %></p>
 	   	    <input class="rectangle-33" type="text" name="" />
 	   		<input class="rectangle-34" type="text" name="name" value="<%=user.getName() %>"/>
 	   		<input class="rectangle-35" type="text" name="email" value="<%=user.getEmail() %>"/>
@@ -97,7 +99,7 @@
 	        <button type="submit" class="div13" >수정</button>
 	    </form>
 	    
-	    <form action="main.jsp">
+	    <form action="../myPage.jsp">
 		    <input class="div14" type="submit" value="취소">
 	    </form>
   </div>
