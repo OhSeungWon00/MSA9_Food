@@ -120,6 +120,8 @@ public class UserServiceImpl implements UserService {
         return result;
     }
 
+    
+    // 회원 삭제 리스트 페이징
     @Override
     public PageInfo<User> page(int page) {
         Page pageObj = new Page();
@@ -134,4 +136,19 @@ public class UserServiceImpl implements UserService {
         }
         return pageInfo;
     }
+
 }
+    
+    
+
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+

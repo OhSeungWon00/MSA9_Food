@@ -78,16 +78,17 @@ menu, ol, ul {
 					required><br> <br>
 				<div class="div9">생년월일</div>
 				<input class="rectangle-1597" type="date" id="birth" name="birth"
-					required><br>
-				<br> <img class="div10" src="./signup_svg/signbtn.svg" /> <input
-					class="div10" type="submit" value="회원가입" />
+					required><br> <br> <img class="div10"
+					src="./signup_svg/signbtn.svg" /> <input class="div10"
+					type="submit" value="회원가입" />
 			</form>
 			<div class="header">
 				<div class="container">
 					<div class="navigation">
 						<form action="login.jsp" method="post">
-							<div class="div20">로그인</div>
+							<button type="submit" class="div20">로그인</button>
 						</form>
+
 					</div>
 					<img class="my-page" src="./signup_svg/myPage.svg" /> <img
 						class="_1" src="./signup_svg/logo.png" />

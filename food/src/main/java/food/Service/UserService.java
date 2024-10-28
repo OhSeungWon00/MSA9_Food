@@ -28,6 +28,12 @@ public interface UserService {
 	
 	// 유저 계정 수정
 	public int update(User user);
+	
+
+	
+	
+	
+	
 }
 
 

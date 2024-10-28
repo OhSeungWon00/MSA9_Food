@@ -187,12 +187,11 @@
   overflow: hidden;
 }
 .pagenumber {
-  width: 250px;
-  height: 30px;
+  width: auto;
+  height: auto;
   position: absolute;
   left: 439px;
   top: 355px;
-  overflow: hidden;
 }
 .frame5 {
   opacity: 0.5;
@@ -279,7 +278,7 @@
 }
 .div3 {
   width: 1134px;
-  height: 413px;
+  height: 450px;
   position: absolute;
   left: 0px;
   top: 0px;
