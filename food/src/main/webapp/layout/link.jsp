@@ -3,5 +3,5 @@
 <%@ include file="/layout/common.jsp" %>
 <%-- 폰트 --%>
 <%-- 라이브러리 --%>
-<%-- reset.css --%>  
+<link href="<%= root %>/static/css/reset.css" rel="stylesheet" />
 <link href="<%= root %>/static/css/style.css" rel="stylesheet" />

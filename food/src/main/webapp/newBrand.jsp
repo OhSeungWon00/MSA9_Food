@@ -1,9 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +42,698 @@
    }
    </style>
   <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/updateBrand1.css">
+<link rel="stylesheet" href="./css/updateBrand2.css">
+<style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+menu, ol, ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+<title>Insert title here</title>
 </head>
+
 <body>
   <div class="div">
     <div class="sidebar">
@@ -89,4 +780,5 @@
   </div>
 </body>
 
+</html>
 </html>

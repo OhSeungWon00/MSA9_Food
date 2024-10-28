@@ -5,11 +5,7 @@ CREATE TABLE `Review` (
   `reg_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '등록일자', -- DATE에서 TIMESTAMP로 변경
   `upd_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '수정일자', -- DATE에서 TIMESTAMP로 변경
   `brand_id` BIGINT NOT NULL COMMENT '식당ID',
-<<<<<<< HEAD
-  `userID` BIGINT NOT NULL COMMENT '사용자ID',
-=======
-  `userId` BIGINT NOT NULL COMMENT '사용자ID',
->>>>>>> branch 'jojo' of https://github.com/OhSeungWon00/MSA9_Food.git
+  `user_id` BIGINT NOT NULL COMMENT '사용자ID',
   `file_id` BIGINT NOT NULL COMMENT 'PK'
 );
 

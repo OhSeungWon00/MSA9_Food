@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
+body{
+	display: grid;
+	margin-top: 130px;
+	place-items: center;
+}
 
-.header,
+/* ***************headter*************** */
 .header * {
   box-sizing: border-box;
 }
@@ -16,6 +21,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 .logo {
   flex-shrink: 0;
@@ -43,10 +49,11 @@
 .mypage {
   width: 25px;
   height: 25px;
-  position: absolute;
+  position: relative;
   left: 11px;
   top: calc(50% - 12.5px);
   opacity: 0.2;
+  cursor: pointer;
 }
 .input {
   background: #ffffff;
@@ -129,15 +136,152 @@
 }
 
 .container{
-	margin-top: 150px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 1200px;
+	height: 350px;
+	position: relative;
+	z-index: 1;
+}
+/* ***************banner*************** */
+.banner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(600px * 4); /* 원래 이미지 4개 */
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.banner > div {
+    min-width: 600px;
+    height: 350px;
+}
+
+/* content */
+.content1, .content2 {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* ***************content*************** */
+/* Content1: 스타일 */
+.restaurant-bw {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.restaurant-bw > div{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 280px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.restaurant-bw > div:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.restaurant-image {
+    width: 100%;
+    height: 160px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.restaurant-info {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.restaurant-rating {
+    font-size: 16px;
+    color: #FF4500;
+    font-weight: bold;
+}
+
+.restaurant-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.restaurant-location, .restaurant-cuisine, .restaurant-details {
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0;
+}
+
+.restaurant-stats {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* Content2: 스타일 */
+.best-restaurant-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.best-restaurant-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.best-restaurant-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.best-restaurant-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.restaurant-caption {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
 }
 
 
-
-
-/* 공통 스타일 */
+/* ***************footer*************** */
 footer {
-    background-color: #f8f8f8;
+    background-color: white;
     padding: 40px 0;
     font-family: 'Arial', sans-serif;
     font-size: 14px;
@@ -234,8 +378,6 @@ ul li a:hover {
 }
 
 /* 회사명과 저작권 */
-.company {
-}
 
 section {
 	margin: 100px auto;
@@ -246,9 +388,19 @@ section {
 	font-size: 32px;
 }
 
-.underLine{
+.underLine-up{
 	width: 100%;
+	height: 1px;
+	background-color: black;
+	background-repeat: repeat;
+	margin-bottom: 0;
+	opacity: 50%;
+}
+
+.underLine{
+	width: 60%;
 	height: 70px;
 	background-color: #7070ff;
+	background-repeat:repeat;
 	margin-bottom: 0;
 }

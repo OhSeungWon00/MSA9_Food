@@ -1,0 +1,152 @@
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E1E1FF;
+    margin: 0;
+    padding: 0;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+    width: 50%;
+    background-color: #F8F8FF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100vh;
+    background-color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar_logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    text-align: left;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #7070ff;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 90%;
+}
+
+.sidebar ul li:hover a {
+    color: white;
+}
+
+/* 제목 스타일 */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 폼 스타일 */
+form {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* form-group 스타일 */
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    width: 100px; /* 일정한 너비로 고정하여 일관된 배치 */
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-width: 200px;
+}
+
+textarea {
+    resize: none; /* 크기 조정 불가 */
+    height: 36px; /* 한 줄 높이로 설정 */
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding: 10px;
+    background-color: #7070ff;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 20px auto;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .sidebar {
+        width: 150px;
+    }
+
+    .form-group {
+        flex-direction: column; /* 작은 화면에서는 세로 정렬 */
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: auto; /* 작은 화면에서는 레이블 너비를 자동으로 설정 */
+        margin-bottom: 5px;
+    }
+
+    textarea {
+        height: auto; /* 작은 화면에서 textarea 높이를 자동으로 설정 */
+    }
+}
