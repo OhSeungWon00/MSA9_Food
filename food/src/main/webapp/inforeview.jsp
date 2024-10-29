@@ -1,9 +1,20 @@
+<%@page import="food.DTO.Review"%>
+<%@page import="java.util.List"%>
+<%@page import="food.Service.ReviewServiceImpl"%>
+<%@page import="food.Service.ReviewService"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%
+	String root = request.getContextPath();
+	ReviewService reviewService = new ReviewServiceImpl();
+	List<Review> reviewList = reviewService.list();
+	System.out.println(reviewList);
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,67 +109,24 @@
       <div class="_22">2</div>
       <div class="frame2"></div>
       <div class="frame-22">
-        <div class="group-20">
-          <!-- <img class="vector-14" src="./inforeview_img/vector-140.svg" /> -->
-          <div class="group-19">
-            <img class="vector2" src="./inforeview_img/vector1.svg" />
-            <div class="bsy-7021">bsy7021</div>
-            <div class="_5-0">5.0</div>
-            <div class="_2024-10-22">2024.10.22</div>
-            <img class="rectangle-157" src="./inforeview_img/rectangle-1570.svg" />
-            <div class="div9">겁나 맛있네~</div>
-            <div class="div10">더보기</div>
-<!--        <img class="frame4" src="./inforeview_img/frame3.svg" />
-            <img class="frame3" src="./inforeview_img/frame2.svg" />
-            <img class="frame5" src="./inforeview_img/frame4.svg" />
-            <div class="_52">5</div>
-            <div class="_0">0</div> -->
-          </div>
-        </div>
+      
+      <!-- 리뷰생성 -->
+      <c:set var="reviewList" value="<%= reviewList %>"></c:set>
+      <c:forEach var="review" items="${reviewList}" varStatus="status">
         <div class="group-20">
           <div class="group-19">
             <img class="vector2" src="./inforeview_img/vector1.svg" />
-            <div class="bsy-7021">32131</div>
-            <div class="_5-0">5.0</div>
-            <div class="_2024-10-22">2024.10.22</div>
+            <div class="bsy-7021">${review.userId }</div>
+            <div class="_5-0">${review.rating}</div>
+            <div class="_2024-10-22">${review.regdate }</div>
             <img class="rectangle-157" src="./inforeview_img/rectangle-1570.svg" />
-            <div class="div9">겁123네~</div>
-            <div class="div10">더보1231기</div>
-            <div class="_52">5</div>
-            <div class="_0">0</div> -->
+            <div class="div9">${review.content}</div>
           </div>
         </div>
-        <div class="group-20">
-          <div class="group-19">
-            <img class="vector2" src="./inforeview_img/vector1.svg" />
-            <div class="bsy-7021">131</div>
-            <div class="_5-0">5.0</div>
-            <div class="_2024-10-22">2024.as2</div>
-            <img class="rectangle-157" src="./inforeview_img/rectangle-1570.svg" />
-            <div class="div9">겁1네~</div>
-            <div class="div10">더보1231기</div>
-            <div class="_52">5</div>
-            <div class="_0">0</div> -->
-          </div>
-        </div>
-        <div class="group-20">
-          <div class="group-19">
-            <img class="vector2" src="./inforeview_img/vector1.svg" />
-            <div class="bsy-7021">32131</div>
-            <div class="_5-0">5.0</div>
-            <div class="_2024-10-22">2024.10.22</div>
-            <img class="rectangle-157" src="./inforeview_img/rectangle-1570.svg" />
-            <div class="div9">겁123네~</div>
-            <div class="div10">31기</div>
-            <div class="_52">5</div>
-            <div class="_0">0</div> -->
-          </div>
-        </div>
+      </c:forEach>
+       <!-- 리뷰생성 끝 -->
       </div>
-      <button class="div11">리뷰쓰기</button>
-    </div>
-    <div class="group-21">
-      <div class="div12">리뷰쓰기</div>
+      <button class="div11" onclick="location.href='newinforeview.jsp'">리뷰쓰기</button>
     </div>
   </div>
   
