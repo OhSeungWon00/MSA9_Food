@@ -58,15 +58,23 @@
               <img class="image" src="./brand_info_review_img/image0.png" />
               <div class="input">
                 <div class="container3">
-                  <div class="div2">검색어를 입력하세요.</div>
                 </div>
               </div>
             </div>
           </div>
           <div class="navigation">
-            <div class="div3">로그아웃</div>
+            <form action="login.jsp" method="post">
+							<button type="submit" class="div20">로그아웃</button>
+						</form>
+						
+			 <form action="myPage.jsp" method="post">
+							<button type="submit" class="div20">마이페이지</button>
+						</form>			
+						
           </div>
-          <img class="my-page" src="./brand_info_review_img/my-page0.svg" />
+          
+          
+          
           <img class="_1" src="./brand_info_review_img/_10.png" />
         </div>
       </div>
