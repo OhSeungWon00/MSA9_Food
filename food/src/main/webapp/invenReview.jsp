@@ -112,7 +112,7 @@ List<Review> reviewList = pageInfo.getList();
                 <c:set var="reviewList" value="<%=reviewList%>" />
                 <div class="frame-31">
                     <c:forEach var="review" items="${reviewList}" varStatus="status">
-                        <form action="updateBrand_pro.jsp" method="post">
+                        <form action="ReviewDelete_pro.jsp" method="post">
                             <div class="group-55">
                                 <input type="hidden" name="review_id" value="${review.review_id}" />
                                 <input class="h" type="text" name="searchname" value="${brand.name}" />
