@@ -56,4 +56,15 @@ public class ReviewServiceImpl implements ReviewService{
 		return pageInfo;
 	}
 
+	@Override
+	public int delete(Review review) {
+		int result = 0;
+		try {
+			result = reviewDAO.delete(review.getReview_id());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+
 }
