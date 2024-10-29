@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/layout/common.jsp" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <header>
 	
@@ -17,11 +18,18 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div class="navigation">
-	    <div class="log-in"><a href="<%= root %>/login.jsp">로그인</a></div>
-	    <div class="join-bw"><a href="<%= root %>/signup.jsp">회원가입</a></div>
-	  </div>
-	  	<img class="mypage" src="<%= root %>/static/img/mypage.png" />
+	  	<c:if test="${param.login == 0 }">
+			<div class="navigation">
+				<div class="log-in"><a href="<%=root%>/login.jsp">로그인</a></div>
+				<div class="join-bw"><a href="<%=root%>/signup.jsp">회원가입</a></div>
+			</div>
+		</c:if>
+		<c:if test = "${param.login == 1 }">
+	  		<a href="<%= root %>/myPage.jsp"><img class="mypage" src="<%= root %>/static/img/mypage.png" /></a>
+		</c:if>	
+		<c:if test = "${param.login == 2 }">
+	  		<a href="<%= root %>/invenBrand.jsp"><img class="mypage" src="<%= root %>/static/img/mypage.png" /></a>
+		</c:if>	
 	</div>
 
 	

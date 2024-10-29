@@ -21,7 +21,6 @@
 				    .birth(request.getParameter("birth"))
 				    .build();
 	
-	// out.println(user);
 
 	UserService userService = new UserServiceImpl();
 	int result = userService.update(user);

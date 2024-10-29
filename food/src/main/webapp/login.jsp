@@ -73,8 +73,8 @@
       
       
       <button class="div14" onclick="location.href='signup.jsp'">회원가입</button>
-      <button class="div15" onclick="location.href='파일명.jsp'">아이디/비밀번호 찾기</button>
-     <!--  <button class="div16" onclick="location.href='main.jsp'">비회원 로그인</button> -->
+      <!-- <button class="div15" onclick="location.href='파일명.jsp'">아이디/비밀번호 찾기</button> -->
+     <button class="div16" onclick="location.href='main.jsp?login=0'">비회원 로그인</button>
     </div>
   </div>
   
