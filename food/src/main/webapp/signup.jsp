@@ -30,6 +30,14 @@ menu, ol, ul {
 	margin: 0;
 	padding: 0;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 화면의 전체 높이 사용 */
+    margin: 0;
+    background: skyblue;
+}
 </style>
 <title>회원가입</title>
 </head>
@@ -76,14 +84,15 @@ menu, ol, ul {
 				<input class="rectangle-1595" type="tel" id="phone" name="phone"
 					required><br> <br>
 				<div class="div9">생년월일</div>
-				<input class="rectangle-1597" type="date" id="birth" name="birth"
-					required><br> <br> <input class="div10"
-					type="submit" value="회원가입">
+				<input class="rectangle-1597" type="date" id="birth" name="birth" required><br> <br>
+				<input class="div10" type="submit" value="회원가입">
 			</form>
 			<div class="header">
 				<div class="container">
 					<div class="navigation">
-						<div class="div20">로그인</div>
+						<form action="login.jsp" method="post">
+							<button type="submit" class="div20">로그인</button>
+						</form>
 					</div>
 					<img class="my-page" src="./signup_svg/myPage.svg" /> <img
 						class="_1" src="./signup_svg/logo.png" />
