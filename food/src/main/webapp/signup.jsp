@@ -43,10 +43,14 @@ menu, ol, ul {
 				<input class="rectangle-159" type="text" id="id" name="id" required><br>
 				<br>
 				<c:if test="${param.error == 1 }">
-					<p style="color: red;">중복되는 아이디가 존재합니다.</p>
+					<script>
+							alert("아이디가 중복되었습니다.")
+						</script>
 				</c:if>
 				<c:if test="${param.error == 2 }">
-					<p style="color: red;">중복되는 아이디가 존재합니다.</p>
+					<script>
+							alert("비밀번호가 일치하지 않습니다.")
+						</script>
 				</c:if>
 				<div class="div4">비밀번호</div>
 				<input class="rectangle-1592" type="password" id="password"
@@ -56,7 +60,9 @@ menu, ol, ul {
 					<input class="rectangle-1593" type="password" id="password2"
 						name="password2" required>
 					<c:if test="${param.error == 0 }">
-						<p class="rectangle-1593" style="color: red;">비밀번호가 다릅니다</p>
+						<script>
+							alert("비밀번호가 일치하지 않습니다.")
+						</script>
 					</c:if>
 				</div>
 				<br> <br>

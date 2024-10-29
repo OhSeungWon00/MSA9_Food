@@ -111,9 +111,11 @@ public class UserServiceImpl implements UserService {
 
     @Override 
     public int update(User user) {
+    	System.out.println("user : " + user);
+    	
         int result = 0;
         try {
-            result = userDAO.update(user);
+            result = userDAO.update(user,"name","email","phone","birth");
         } catch (Exception e) {
             e.printStackTrace();
         }
