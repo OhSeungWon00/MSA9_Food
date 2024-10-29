@@ -19,7 +19,6 @@
 		Date regdate = new Date();
 		
 		name = "임시가게";
-		userId = "임시ID";
 		Review review = Review.builder()
 							.name(name)
 							.userId(userId)

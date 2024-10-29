@@ -2,6 +2,10 @@
 .div * {
   box-sizing: border-box;
 }
+
+
+
+
 .div {
   height: 987px;
   position: relative;
@@ -97,6 +101,24 @@
   left: 1165px;
   top: calc(50% - -1.5px);
 }
+
+.navigation1 {
+  width: 240px;
+  height: 15px;
+  position: absolute;
+  left: 1040px;
+  top: calc(50% - -1.5px);
+}
+.div14{
+	color: black;
+	border:1px solid black;
+	border-radius: 10px;
+	
+}
+.div14:hover{
+	background: #7070FF;
+	color: white;	
+}
 .div3 {
   color: #8c8c8c;
   text-align: center;
@@ -112,16 +134,19 @@
   align-items: center;
   justify-content: center;
 }
-.my-page {
-  opacity: 0.4;
-  width: 32px;
-  height: 32px;
+.my-page{ 
+  width: 240px;
+  height: 15px;
   position: absolute;
-  left: 1215px;
-  top: 41px;
+  left: 910px;
+  top: calc(50% - -6px);
   overflow: visible;
 }
+
+  
+
 ._1 {
+	 border-radius: 50%;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -219,12 +244,24 @@
   transform: translate(0px, -5px);
   overflow: visible;
 }
+
+.frame:hover{
+	background: #7070FF;
+	color: white;	
+}
 .frame {
   width: 30px;
   height: 31.39px;
   position: absolute;
   left: 468px;
-  top: 145px;
+  top: 145px;.div14:hover{
+	background: #7070FF;
+	color: white;	
+	.div14:hover{
+	background: #7070FF;
+	color: white;	
+}
+}
   overflow: visible;
 }
 ._496 {
@@ -241,14 +278,17 @@
   justify-content: flex-start;
 }
 .vector {
-  width: 1.74%;
-  height: 2.53%;
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
   position: absolute;
-  right: 61.04%;
-  left: 37.22%;
-  bottom: 57.35%;
-  top: 40.12%;
-  overflow: visible;
+  left: 510px;
+  top: 425px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 ._5 {
   color: #000000;
@@ -466,6 +506,7 @@
   justify-content: flex-start;
 }
 ._13 {
+	 border-radius: 50%;
   color: #000000;
   text-align: left;
   font-family: "Inter-Regular", sans-serif;
@@ -543,14 +584,17 @@
   overflow: visible;
 }
 .vector2 {
-  width: 2.88%;
-  height: 5.64%;
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
   position: absolute;
-  right: 85%;
-  left: 12.12%;
-  bottom: 73.5%;
+  left: 70px;
   margin-top: 55.5px;
-  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .bsy-7021 {
   color: #000000;
@@ -669,13 +713,15 @@
   align-items: center;
   justify-content: flex-start;
 }
+
+
 .div11 {
   border-radius: 17px;
   border-style: solid;
   border-color: black;
   color : black;
   border-radius: 10px;
-  height: 28px;
+  height: 20ppx;
   width: 99px;
   position: absolute;
   left: 869px;

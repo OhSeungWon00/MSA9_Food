@@ -95,7 +95,7 @@
             <!-- 브랜드이름정보 -->
             <input type="hidden" name="name" id="name" value="브랜드이름"></div>
             <!-- 작성자 -->
-            <div class="bsy-7021">user.getUserId()</div>
+            <div class="bsy-7021">${ user.getUserId() }</div>
             <input type="hidden" name="userId" id="userId" value="${user.getUserId()}"/>
             <!-- 평점 -->
             <input class="_5-0" type="number" name="rating" id="rating" value="5"/>

@@ -73,7 +73,11 @@
             </div>
           </div>
           <div class="navigation">
-            <div class="div3">로그아웃</div>
+            <button class="div14" onclick="location.href='login.jsp'">로그아웃</button>
+          </div>
+          
+          <div class="navigation1">
+            <button class="div14" onclick="location.href='myPage.jsp'">마이페이지</button>
           </div>
           <img class="my-page" src="./inforeview_img/my-page0.svg" />
           <img class="_1" src="./inforeview_img/_10.png" />
@@ -86,7 +90,9 @@
       <div class="div8">예약하기</div>
       <img class="vector-16" src="./inforeview_img/vector-160.svg" />
       <img class="vector-13" src="./inforeview_img/vector-130.svg" />
-      <img class="frame" src="./inforeview_img/frame0.svg" />
+      <a href="index.jsp">
+      <img class="frame" src="./inforeview_img/frame0.svg"  />
+      </a>
       <div class="_496">496개 리뷰 평균 평점</div>
       <img class="vector" src="./inforeview_img/vector0.svg" />
       <div class="_5">5점</div>
