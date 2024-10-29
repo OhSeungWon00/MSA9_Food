@@ -1,0 +1,371 @@
+.div,
+.div * {
+  box-sizing: border-box;
+}
+.div {
+  height: 987px;
+  position: relative;
+}
+.main {
+  background: #ffffff;
+  width: 1440px;
+  height: 987px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.header {
+  background: #ffffff;
+  width: 1440px;
+  height: 122px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.container {
+  width: 1440px;
+  height: 96px;
+  position: absolute;
+  left: calc(50% - 720px);
+  top: 0px;
+}
+.container2 {
+  width: 685px;
+  height: 32px;
+  position: absolute;
+  left: 125px;
+  top: calc(50% - 7px);
+}
+.fieldset {
+  border-radius: 17px;
+  border-style: solid;
+  border-color: #d2d2d2;
+  border-width: 1px;
+  width: 350px;
+  height: 32px;
+  position: absolute;
+  left: 52px;
+  top: calc(50% - 16px);
+}
+.image {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 11px;
+  top: calc(50% - 12.5px);
+  object-fit: cover;
+}
+.input {
+  background: #ffffff;
+  height: 30px;
+  position: absolute;
+  right: 31px;
+  left: 43px;
+  top: calc(50% - 15px);
+  overflow: hidden;
+}
+.container3 {
+  height: 15px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 7.5px;
+  overflow: hidden;
+}
+.div2 {
+  color: #757575;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 12.2890625px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 107.89px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navigation {
+  width: 240px;
+  height: 15px;
+  position: absolute;
+  left: 1165px;
+  top: calc(50% - -1.5px);
+}
+.div3 {
+  color: #8c8c8c;
+  text-align: center;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 12.2890625px;
+  font-weight: 400;
+  position: absolute;
+  left: 97px;
+  top: -0.5px;
+  width: 55px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-page {
+  opacity: 0.4;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 1215px;
+  top: 41px;
+  overflow: visible;
+}
+._1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 97px;
+  top: 35px;
+  object-fit: cover;
+}
+.div4 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-Bold", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 520px;
+  top: 139px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div5 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  opacity: 0.3;
+  position: absolute;
+  left: 470px;
+  top: 191px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div6 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  opacity: 0.3;
+  position: absolute;
+  left: 637px;
+  top: 191px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div7 {
+  color: #7070ff;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  left: 757px;
+  top: 191px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div8 {
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSansKr-DemiLight", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  opacity: 0.3;
+  position: absolute;
+  left: 878px;
+  top: 191px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vector-16 {
+  opacity: 0.3;
+  width: 500px;
+  height: 0px;
+  position: absolute;
+  left: 468px;
+  top: 242px;
+  overflow: visible;
+}
+.vector-13 {
+  width: 1440px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 126px;
+  transform: translate(0px, -5px);
+  overflow: visible;
+}
+.frame {
+  width: 30px;
+  height: 31.39px;
+  position: absolute;
+  left: 468px;
+  top: 145px;
+  overflow: visible;
+}
+.frame2 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 522px;
+  top: 962px;
+  overflow: hidden;
+}
+.frame-22 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 468px;
+  top: 295px;
+  overflow: hidden;
+}
+.group-20 {
+  flex-shrink: 0;
+  width: 500px;
+  height: 246px;
+  position: static;
+}
+.vector-14 {
+  opacity: 0.2;
+  width: 500px;
+  height: 246px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  overflow: visible;
+}
+.group-19 {
+  width: 395px;
+  height: 129px;
+  position: static;
+}
+.vector {
+  width: 2.88%;
+  height: 4.93%;
+  position: absolute;
+  right: 85%;
+  left: 12.12%;
+  bottom: 76.81%;
+  top: 18.26%;
+  overflow: visible;
+}
+.bsy-7021 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 62px;
+  top: 33.5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._5-0 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 86px;
+  top: 55.5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._2024-10-22 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: absolute;
+  left: 393px;
+  top: 55.5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rectangle-157 {
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 394px;
+  height: 82px;
+  position: absolute;
+  left: 63px;
+  top: 79.5px;
+  overflow: visible;
+}
+.div9 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 70px;
+  top: 86.5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div10 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 399px;
+  top: 142.5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame3 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 432px;
+  top: 138.5px;
+  overflow: visible;
+}
+.div11 {
+  border-radius: 0px;
+  flex-shrink: 0;
+  width: 99px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+  justify-content: center;
+}
