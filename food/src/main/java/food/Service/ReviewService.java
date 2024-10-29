@@ -14,4 +14,6 @@ public interface ReviewService {
 	public List<Review> list();
 	// 페이징
 	public PageInfo<Review> page(int page);
+	// 리뷰삭제
+	public int delete(Review review);
 }
