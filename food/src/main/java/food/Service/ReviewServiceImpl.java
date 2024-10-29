@@ -2,6 +2,9 @@ package food.Service;
 
 import java.util.List;
 
+import com.alohaclass.jdbc.dto.Page;
+import com.alohaclass.jdbc.dto.PageInfo;
+
 import food.DAO.ReviewDAO;
 import food.DTO.Review;
 
@@ -37,6 +40,20 @@ public class ReviewServiceImpl implements ReviewService{
 			e.printStackTrace();
 		}
 		return list;
+	}
+
+	@Override
+	public PageInfo<Review> page(int page) {
+		Page pageObj = new Page();
+		pageObj.setPage(page);
+		pageObj.setSize(7);
+		PageInfo<Review> pageInfo = null;
+		try {
+			pageInfo = reviewDAO.page(pageObj);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return pageInfo;
 	}
 
 }
