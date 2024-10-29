@@ -121,6 +121,7 @@
   overflow: visible;
 }
 ._1 {
+	 border-radius: 50%;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -360,12 +361,20 @@
   top: 138.5px;
   overflow: visible;
 }
+.div11:hover{
+	background: #7070FF;
+	color: white;	
+}
+
 .div11 {
+  right: -360px;
+  top: -70px;
   border-radius: 0px;
   flex-shrink: 0;
   width: 99px;
-  height: 28px;
+  height: 22px;
   position: relative;
   overflow: visible;
   justify-content: center;
+  
 }
