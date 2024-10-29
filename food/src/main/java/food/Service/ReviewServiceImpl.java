@@ -67,4 +67,11 @@ public class ReviewServiceImpl implements ReviewService{
 		return result;
 	}
 
+	@Override
+	public List<Review> list2() {
+		Review reviewName = new Review();
+		String Name = reviewName.getName();
+		return null;
+	}
+
 }
