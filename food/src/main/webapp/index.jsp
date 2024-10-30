@@ -166,8 +166,11 @@
 	        </div>
 	    </div>
 	</div>
+<<<<<<< HEAD
 	<div class="underLine-up"></div>
 	<%-- [Contents] ######################################################### --%>
+=======
+>>>>>>> refs/heads/main
 	<jsp:include page="/layout/footer.jsp" />
 	<jsp:include page="/layout/script.jsp" />
 	<script src="<%= root %>/static/js/index.js"></script>

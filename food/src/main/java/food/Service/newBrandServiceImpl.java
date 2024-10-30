@@ -112,11 +112,4 @@ public class newBrandServiceImpl implements newBrandService{
 		}
         return pageInfo;
 	}
-
-
-
-
-
-
-
 }

@@ -1,6 +1,6 @@
 package food.DTO;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,12 +12,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class Review {
-	private long reviewId; // review_id에 대응
-	private int rating; // rating에 대응
-	private String content; // content에 대응
-	private Timestamp regDate; // reg_date에 대응
-	private Timestamp updDate; // upd_date에 대응
-	private long brandId; // brand_id에 대응
-	private long userId; // user_id에 대응
-	private long fileId;
+	private Long review_id; //리뷰번호 : 오토인크리먼트(AI)
+	private int rating; //평점
+	private String content; // 내용
+	private Date regdate; // 업로드시간
+	private String userId; // 작성자 ID
+	private String name; // 브랜드이름
 }

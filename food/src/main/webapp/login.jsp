@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="./css/login1.css">
   <link rel="stylesheet" href="./css/login2.css">
   
+ 
+ 
+ 
+ 
   
   <style>
    a,
@@ -59,7 +63,11 @@
 	      
 	       <label for="password">비밀번호:</label><br>
 	     <input class="div10" type="password" id="password" name="password" required>
+	        <div class="div17"></div>
+	      <div class="div13">아이디 기억하기</div>
 	      
+	      <div class="div18"></div>
+	      <div class="div12">자동로그인</div>
 	      <!-- <div class="div17"></div>
 	      <div class="div13">아이디 기억하기</div>
 	      
@@ -73,8 +81,8 @@
       
       
       <button class="div14" onclick="location.href='signup.jsp'">회원가입</button>
-      <button class="div15" onclick="location.href='파일명.jsp'">아이디/비밀번호 찾기</button>
-     <!--  <button class="div16" onclick="location.href='main.jsp'">비회원 로그인</button> -->
+      <!-- <button class="div15" onclick="location.href='파일명.jsp'">아이디/비밀번호 찾기</button> -->
+     <button class="div16" onclick="location.href='index.jsp?login=0'">비회원 로그인</button>
     </div>
   </div>
   

@@ -18,15 +18,25 @@
 	User loginUser = userService.login(user);
 	
 	// 로그인 실패
-	if( loginUser == null ) {
-		   out.println("로그인 실패 ㅋ ㅋ");
+	if (loginUser == null) {
+%>
+		<script type="text/javascript">
+			alert("로그인 실패!");
+			history.back(); // 로그인 실패 시 이전 페이지로 이동
+		</script>
+<%
 	}
 	else{
 	// 로그인 성공
 	session.setAttribute("loginId", userId);
 	session.setAttribute("user", loginUser);
 	// 메인 화면으로 이동
-	response.sendRedirect("main.jsp");
+		if(userId.equals("123")){
+			response.sendRedirect("index.jsp?login=2");
+		}
+		else{
+			response.sendRedirect("index.jsp?login=1");		
+		}
 	}
 	
 	
