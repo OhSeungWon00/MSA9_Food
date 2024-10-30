@@ -1,4 +1,7 @@
-
+<%@page import="java.util.List"%>
+<%@page import="food.DTO.Menu"%>
+<%@page import="food.Service.MenuServiceImpl"%>
+<%@page import="food.Service.MenuService"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
@@ -7,8 +10,6 @@
 <%@ include file="/layout/common.jsp" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<<<<<<< bsy
-=======
     
 <%
 	MenuService menuService = new MenuServiceImpl();
@@ -19,7 +20,6 @@
 	List<Menu> menuList = menuService.list2(menu);
 	System.out.println(menuList);
 %>
->>>>>>> main
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,19 +43,6 @@
 			</div>
 		</div>
 		<!-- 메뉴 목록 -->
-<<<<<<< bsy
-		<div class="menu_container">
-			<div class="menu_name">
-				<a>비아톨레도 파스타 가을 7코스 메뉴</a>
-			</div>
-			<div class="menu_explain">
-				<a>가을코스</a>
-			</div>
-			<div class="menu_price">
-				<a>89,000 - 11,9000 원</a>
-			</div>
-		</div>
-=======
 		<c:set var="menuList" value="<%= menuList %>"></c:set>
 		<c:forEach var="menu" items="${menuList }" varStatus="status">
 			<div class="menu_container">
@@ -71,7 +58,6 @@
 		</div>
 		</c:forEach>
 		<!-- 메뉴 생성 끝 -->
->>>>>>> main
 	</div>
 	<%-- [Contents] ######################################################### --%>
 	<jsp:include page="/layout/footer.jsp" />
