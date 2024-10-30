@@ -80,8 +80,11 @@
       <div class="div5">매장정보</div>
       <div class="div6">메뉴</div>
       <div class="div7">리뷰</div>
-      <div class="div8">예약하기</div>
-      <img class="vector-16" src="./newinforeview_img/vector-160.svg" />
+
+
+			<div class="div8" onclick="alert('모든 예약이 매진되었습니다.')">예약하기</div>
+
+			<img class="vector-16" src="./newinforeview_img/vector-160.svg" />
       <img class="vector-13" src="./newinforeview_img/vector-130.svg" />
       <img class="frame" src="./newinforeview_img/frame0.svg" />
       <div class="frame2"></div>
