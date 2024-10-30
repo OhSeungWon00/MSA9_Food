@@ -1,322 +1,86 @@
-.div, .div * {
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.div {
-	height: 820px;
-	position: relative;
-}
-
-.main {
-	background: #ffffff;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	overflow: hidden;
-}
-
-.div2 {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	object-fit: cover;
-}
-
-.div3 {
-	background: #ffffff;
-	border-radius: 20px;
-	border-style: solid;
-	border-color: #000000;
-	border-width: 1px;
-	width: 500px;
-	height: 50px;
-	position: absolute;
-	left: 470px;
-	top: 313px;
-}
-
-.div4 {
-	background: #ffffff;
-	border-radius: 20px;
-	border-style: solid;
-	border-color: #000000;
-	border-width: 1px;
-	width: 500px;
-	height: 50px;
-	position: absolute;
-	left: 470px;
-	top: 392px;
-}
-
-
-
-
-
-
-
-.div5 {
-<<<<<<< HEAD
-  border-radius: 0px;
-  width: 500px;
-  height: 90px;
-  position: relative;
+body {
   display: flex;
   justify-content: center;
-  overflow: visible;
-=======
-	border-radius: 0px;
-	width: 500px;
-	height: 90px;
-	position: absolute;
-	left: 470px;
-	top: 528px;
-	overflow: visible;
->>>>>>> refs/heads/main
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a8c0ff, #fbc2eb);
 }
 
-.div5:hover{
-	 cursor: pointer;
-	background: #7070FF;
-	color: white;	
-	border-radius: 0px;
+.login-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.div6 {
-	opacity: 0.4;
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	left: 489px;
-	top: 402px;
-	overflow: visible;
-}
-
-.div7 {
-	opacity: 0.4;
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	left: 489px;
-	top: 323px;
-	overflow: visible;
-}
-
-.div8 {
-<<<<<<< HEAD
+.title {
+  font-size: 2em;
   color: #7070ff;
-  text-align: center;
-  font-family: "YoungSerif-Regular", sans-serif;
-  font-size: 80px;
-  font-weight: 400;
-  position: absolute;
-  left: 606px;
-  top: 128px;
+  margin-bottom: 20px;
+}
+
+.login-form {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-=======
-	color: #7070ff;
-	text-align: left;
-	font-family: "YoungSerif-Regular", sans-serif;
-	font-size: 80px;
-	font-weight: 400;
-	position: absolute;
-	left: 606px;
-	top: 128px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
->>>>>>> refs/heads/main
+  flex-direction: column;
 }
 
-
-
-
-
-
-.div9:hover{
-	background: #7070FF;
-	color: white;	
+.label {
+  margin-bottom: 15px;
 }
 
+.label input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-
-.div9 {
-<<<<<<< HEAD
-  color: #ffffff;
-  text-align: center;
-  font-family: "YoungSerif-Regular", sans-serif;
-  font-size: 34px;
-  font-weight: 400;
-  position: absolute;
-  left: 658px;
-  top: 549px;
+.options {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-=======
-	 cursor: pointer;
-	color: #ffffff;
-	text-align: left;
-	font-family: "YoungSerif-Regular", sans-serif;
-	font-size: 34px;
-	font-weight: 400;
-	position: absolute;
-	left: 658px;
-	top: 549px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
->>>>>>> refs/heads/main
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 0.9em;
+  color: #333;
 }
 
-.div10 {
-	color: #000000;
-	text-align: left;
-	font-family: "YoungSerif-Regular", sans-serif;
-	font-size: 26px;
-	font-weight: 400;
-	opacity: 0.4;
-	position: absolute;
-	left: 533px;
-	top: 399px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+.login-button {
+  padding: 12px;
+  background-color: #7070ff;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.div11 {
-	color: #000000;
-	text-align: left;
-	font-family: "YoungSerif-Regular", sans-serif;
-	font-size: 26px;
-	font-weight: 400;
-	opacity: 0.4;
-	position: absolute;
-	left: 533px;
-	top: 320px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+.login-button:hover {
+  background-color: #5050dd;
 }
 
-.div12 {
-	color: #000000;
-	text-align: left;
-	font-family: "YoungSerif-Regular", sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-	position: absolute;
-	left: 513px;
-	top: 465px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+.links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
 }
 
-
-
-
-.div13 {
-
-	color: #000000;
-	text-align: left;
-	font-family: "YoungSerif-Regular", sans-serif;
-	font-size: 24px;
-	font-weight: 400;
-	position: absolute;
-	left: 788px;
-	top: 465px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+.links a {
+  color: #333;
+  text-decoration: none;
 }
 
-
-
-.div14:hover{
-	background: #7070FF;
-	color: white;	
-	 cursor: pointer;
-}
-
-.div16:hover{
-	background: #7070FF;
-	color: white;
-	 cursor: pointer;	
-}
-
-
-
-.div14 {
-	color: #000000;
-	text-align: left;
-	font-family: "YoungSerif-Regular", sans-serif;
-	font-size: 22px;
-	font-weight: 400;
-	position: absolute;
-	left: 470px;
-	top: 649px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-}
-
-.div15 {
-	color: #000000;
-	text-align: left;
-	font-family: "YoungSerif-Regular", sans-serif;
-	font-size: 22px;
-	font-weight: 400;
-	position: absolute;
-	left: 620px;
-	top: 649px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-}
-
-.div16 {
-	color: #000000;
-	text-align: left;
-	font-family: "YoungSerif-Regular", sans-serif;
-	font-size: 22px;
-	font-weight: 400;
-	position: absolute;
-	left: 843px;
-	top: 649px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-}
-
-.div17 {
-	background: #ffffff;
-	border-radius: 4px;
-	border-style: solid;
-	border-color: #000000;
-	border-width: 1px;
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	left: 474px;
-	top: 470px;
-}
-
-.div18 {
-	background: #ffffff;
-	border-radius: 4px;
-	border-style: solid;
-	border-color: #000000;
-	border-width: 1px;
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	left: 749px;
-	top: 470px;
+.links a:hover {
+  text-decoration: underline;
 }
