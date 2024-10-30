@@ -69,4 +69,20 @@ public class MenuServiceImpl implements MenuService{
 		}
 		return menu;
 	}
+
+	// 가게별 메뉴리스트 조회
+	@Override
+	public List<Menu> list2(Menu menu) {
+		String brandId = menu.getBrandId();
+		List<Menu> listby = null;
+		
+		try {
+			Map<Object, Object> where = new HashMap<Object, Object>();
+			where.put("brand_id", brandId);
+			listby = menuDAO.listBy(where);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return listby;
+	}
 }
