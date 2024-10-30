@@ -6,7 +6,7 @@
 	
 	<div class="header">
 <!-- 	  <img class="logo" src="../static/img/logo.png" /> -->
-	  <img class="logo" src="<%= root %>/static/img/logo.png"  >
+	  <img class="logo" src="<%= root %>/static/img/logo.png" onclick="window.location.href='<%= root %>/index.jsp'" style="cursor: pointer;">
 	  <div class="search">
 	    <div class="fieldset">
 	      <img class="search-img" src="<%= root %>/static/img/search_bar.png" />
@@ -21,7 +21,7 @@
 	    <div class="log-in"><a href="<%= root %>/login.jsp">로그인</a></div>
 	    <div class="join-bw"><a href="<%= root %>/signup.jsp">회원가입</a></div>
 	  </div>
-	  	<img class="mypage" src="<%= root %>/static/img/mypage.png" />
+	  	<img class="mypage" src="<%= root %>/static/img/mypage.png" onclick="window.location.href='<%= root %>/myPage.jsp'"/>
 	</div>
 
 	

@@ -34,7 +34,7 @@
 	<div class="content1">
 	    <div class="section-title">Black and White Chef</div>
 	    <div class="restaurant-bw">
-	        <div class="restaurant-card1">
+	        <div class="restaurant-card1" onclick="window.location.href='<%= root %>/index_page.jsp'">
 	            <img src="<%= root %>/img/restaurant1.jpg" alt="레스토랑 이미지" class="restaurant-image">
 	            <div class="restaurant-info">
 	                <div class="restaurant-rating">★ 4.9</div>
@@ -48,7 +48,7 @@
 	                </div>
 	            </div>
 	        </div>
-	        <div class="restaurant-card2">
+	        <div class="restaurant-card2" onclick="window.location.href='<%= root %>/index_page2.jsp'">
 	            <img src="<%= root %>/img/restaurant2.jpg" alt="레스토랑 이미지" class="restaurant-image">
 	            <div class="restaurant-info">
 	                <div class="restaurant-rating">★ 4.8</div>
@@ -62,7 +62,7 @@
 	                </div>
 	            </div>
 	        </div>
-	        <div class="restaurant-card3">
+	        <div class="restaurant-card3"  onclick="window.location.href='<%= root %>/index_page3.jsp'">
 	            <img src="<%= root %>/img/restaurant3.jpg" alt="레스토랑 이미지" class="restaurant-image">
 	            <div class="restaurant-info">
 	                <div class="restaurant-rating">★ 4.5</div>
@@ -166,7 +166,6 @@
 	        </div>
 	    </div>
 	</div>
-	<div class="test">asdasdasd</div>
 	<div class="underLine-up"></div>
 	<%-- [Contents] ######################################################### --%>
 	<jsp:include page="/layout/footer.jsp" />

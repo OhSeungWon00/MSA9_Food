@@ -1,12 +1,10 @@
-@charset "UTF-8";
-
 body{
 	display: grid;
 	margin-top: 130px;
 	place-items: center;
 }
 
-/* ***************headter*************** */
+/* ***************header*************** */
 .header * {
   box-sizing: border-box;
 }
@@ -55,6 +53,9 @@ body{
   opacity: 0.2;
   cursor: pointer;
 }
+.mypage:hover{
+	opacity: 1;
+}
 .input {
   background: #ffffff;
   height: 30px;
@@ -97,10 +98,10 @@ body{
   position: relative;
 }
 .log-in {
-  color: #8c8c8c;
+  color: black;
   text-align: center;
   font-family: "NotoSansKr-DemiLight", sans-serif;
-  font-size: 12.2890625px;
+  font-size: 12px;
   font-weight: 400;
   position: absolute;
   left: 92px;
@@ -110,12 +111,17 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.4;
 }
+.log-in:hover{
+	opacity: 1;
+}
+
 .join-bw {
-  color: #8c8c8c;
+  color: black;
   text-align: left;
   font-family: "NotoSansKr-DemiLight", sans-serif;
-  font-size: 12.1875px;
+  font-size: 12px;
   font-weight: 400;
   position: absolute;
   left: 177px;
@@ -125,14 +131,21 @@ body{
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  opacity: 0.4;
+}
+.join-bw:hover {
+	opacity: 1;
 }
 .my-page-icon {
+  color: black;
   opacity: 0.4;
   flex-shrink: 0;
   width: 32px;
   height: 32px;
   position: relative;
-  overflow: visible;
+}
+.my-page-icon:hover {
+	opacity:1;
 }
 
 .container{
@@ -159,12 +172,18 @@ body{
 }
 
 /* content */
-.content1, .content2 {
+.content1 {
     width: 1200px;
     margin: 0 auto;
     padding: 15px;
     background-color: white;
 }
+ .content2{
+ 	width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+ }
 
 .section-title {
     font-size: 24px;
@@ -288,6 +307,7 @@ footer {
     color: #333;
     text-align: center;
     height: 300px;
+    width: 100%;
 }
 
 /* 메인 푸터 */
@@ -317,8 +337,7 @@ footer {
 }
 
 .list2, .list3, .list4 {
-	opacity: 70%;
-	flex: 1;
+	opacity: 0.7;
 	margin: 0 10px;
 }
 
@@ -326,8 +345,12 @@ ul {
     list-style: none;
     padding: 0;
 }
-ul li{
+ul li {
 	margin-bottom: 10px;
+}
+ul li:hover a {
+	color: black;
+	opacity: 1;
 }
 ul li a{
     margin-bottom: 10px;
@@ -335,7 +358,7 @@ ul li a{
 }
 
 ul li a:hover {
-    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* SNS 아이콘 섹션 */
@@ -374,10 +397,7 @@ ul li a:hover {
 
 .footer_list a:hover, .address_1 a:hover, .address_2 a:hover, .company a:hover {
     color: #000;
-    text-decoration: underline;
 }
-
-/* 회사명과 저작권 */
 
 section {
 	margin: 100px auto;
@@ -389,16 +409,17 @@ section {
 }
 
 .underLine-up{
-	width: 100%;
+	width: 60%;
 	height: 1px;
 	background-color: black;
 	background-repeat: repeat;
 	margin-bottom: 0;
 	opacity: 50%;
+	margin-top: 100px
 }
 
 .underLine{
-	width: 60%;
+	width: 100%;
 	height: 70px;
 	background-color: #7070ff;
 	background-repeat:repeat;
