@@ -1,3 +1,6 @@
+<%@page import="food.DTO.newBrand"%>
+<%@page import="food.Service.newBrandServiceImpl"%>
+<%@page import="food.Service.newBrandService"%>
 <%@page import="java.util.List"%>
 <%@page import="food.DTO.Menu"%>
 <%@page import="food.Service.MenuServiceImpl"%>
@@ -14,11 +17,15 @@
 <%
 	MenuService menuService = new MenuServiceImpl();
 	
-	//임시값
-	String name = "41414";
-	Menu menu = Menu.builder().brandId(name).build();
+	String id = request.getParameter("id");
+	Menu menu = Menu.builder().brandId(id).build();
 	List<Menu> menuList = menuService.list2(menu);
-	System.out.println(menuList);
+
+	newBrandService newBrandService = new newBrandServiceImpl();
+	newBrand newbrand = newBrand.builder().brandId(Long.parseLong(id)).build();
+	newbrand = newBrandService.idsearch(newbrand);
+	String brandname = newbrand.getName();
+	
 %>
 <!DOCTYPE html>
 <html>
@@ -33,12 +40,12 @@
 	<%-- [Contents] ######################################################### --%>
 	<div class="container">
 		<div class="content-title">
-			<h1>디핀 deepin</h1>
+			<h1><%= brandname %></h1>
 			<div class="subtitle">
 				<ul>
-					<li onclick="location.href='index_page.jsp'">매장정보</li>
-					<li onclick="location.href='detail_menu.jsp'">메뉴</li>
-					<li onclick="location.href='inforeview.jsp'">리뷰</li>
+					<li onclick="location.href='index_page.jsp?id=<%=id%>'">매장정보</li>
+					<li onclick="location.href='detail_menu.jsp?id=<%=id%>'">메뉴</li>
+					<li onclick="location.href='inforeview.jsp?id=<%=id%>'">리뷰</li>
 				</ul>
 			</div>
 		</div>

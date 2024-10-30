@@ -1,3 +1,6 @@
+<%@page import="food.DTO.newBrand"%>
+<%@page import="food.Service.newBrandServiceImpl"%>
+<%@page import="food.Service.newBrandService"%>
 <%@page import="food.DTO.User"%>
 <%@page import="java.util.List"%>
 <%@page import="food.Service.UserServiceImpl"%>
@@ -14,6 +17,13 @@
     UserService userService =  new UserServiceImpl();
     List<User> userList = userService.list();
     User user = userService.select(loginId);
+    
+    
+    String id = request.getParameter("id");
+	newBrandService newBrandService = new newBrandServiceImpl();
+	newBrand newbrand = newBrand.builder().brandId(Long.parseLong(id)).build();
+	newbrand = newBrandService.idsearch(newbrand);
+	String brandname = newbrand.getName();
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,7 +86,7 @@
           <img class="_1" src="./newinforeview_img/_10.png" />
         </div>
       </div>
-      <div class="div4">비아 톨레도 파스타바</div>
+      <div class="div4"><%=brandname %></div>
       <div class="div5">매장정보</div>
       <div class="div6">메뉴</div>
       <div class="div7">리뷰</div>
@@ -90,13 +100,13 @@
       <div class="frame2"></div>
       <div class="frame-22">
             <!-- 작성칸 -->
-        <form action="newinforeview_pro.jsp" method="post">
+        <form action="newinforeview_pro.jsp?id=<%=id%>" method="post">
         <div class="group-20">
           <img class="vector-14" src="./newinforeview_img/vector-140.svg" />
           <div class="group-19">
             <img class="vector" src="./newinforeview_img/vector0.svg" />
             <!-- 브랜드이름정보 -->
-            <input type="hidden" name="name" id="name" value="브랜드이름"></div>
+            <input type="hidden" name="name" id="name" value="<%=brandname%>"></div>
             <!-- 작성자 -->
             <div class="bsy-7021">${ user.getUserId() }</div>
             <input type="hidden" name="userId" id="userId" value="${user.getUserId()}"/>

@@ -116,11 +116,18 @@ List<newBrand> brandList = pageInfo.getList();
                             <div class="group-55">
                                 <input type="hidden" name="brandId" value="${brand.brandId}" />
                                 <input class="h" type="text" name="searchname" value="${brand.name}" />
-                                <div class="_13">${status.index + 1 }</div>
+                                <%-- <div class="_13">${status.index + 1 }</div> --%>
+                                <div class="_13">${brand.brandId }</div>
                                 <div class="div12">${brand.name}</div>
                                 <div class="_010-1111-1234">${brand.phone}</div>
                                 <div class="_123-123">${brand.location}</div>
-                                <button class="rectangle-40" type="button" onclick="location.href='nextPage.jsp'">수정</button>
+                                <button class="rectangle-40" type="button" onclick="moveToPage('${brand.brandId}')">수정</button>
+                                <script>
+									function moveToPage(id) {
+									    // 다른 JSP 페이지로 이동하면서 URL 파라미터로 값 전달
+									    location.href = './admin/menu/Menu_pro.jsp?id=' + encodeURIComponent(id);
+									}
+									</script>
                                 <input class="rectangle-39" type="submit" value="수정" />
                             </div>
                         </form>

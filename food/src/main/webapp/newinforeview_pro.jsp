@@ -16,9 +16,9 @@
 		String userId = request.getParameter("userId");
 		String rating = request.getParameter("rating"); // 정수변환해야함
 		String content = request.getParameter("content");
+		String id = request.getParameter("id");
 		Date regdate = new Date();
 		
-		name = "임시가게";
 		Review review = Review.builder()
 							.name(name)
 							.userId(userId)
@@ -34,7 +34,7 @@
 		
 		// 리뷰 작성 성공
 		if(result > 0){
-    	response.sendRedirect("inforeview.jsp");
+    	response.sendRedirect("inforeview.jsp?id="+id);
     	}
     	// 리뷰 작성 실패
     	else{

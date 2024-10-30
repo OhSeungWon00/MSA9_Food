@@ -1,3 +1,6 @@
+<%@page import="food.Service.newBrandServiceImpl"%>
+<%@page import="food.DTO.newBrand"%>
+<%@page import="food.Service.newBrandService"%>
 <%@page import="food.DTO.Review"%>
 <%@page import="java.util.List"%>
 <%@page import="food.Service.ReviewServiceImpl"%>
@@ -10,14 +13,21 @@
     pageEncoding="UTF-8"%>
     
 <%
+	String id = request.getParameter("id");
+	newBrandService newBrandService = new newBrandServiceImpl();
+	newBrand newbrand = newBrand.builder().brandId(Long.parseLong(id)).build();
+	newbrand = newBrandService.idsearch(newbrand);
+	String brandname = newbrand.getName();
+
 	String root = request.getContextPath();
 	ReviewService reviewService = new ReviewServiceImpl();
-	String name = "임시가게2";
+	String name = brandname;
 	Review review = Review.builder()
 						.name(name)
 						.build();
 	List<Review> reviewList = reviewService.list2(review);
-	System.out.println(reviewList);
+	
+	
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -87,11 +97,13 @@
           <img class="_1" src="./inforeview_img/_10.png" />
         </div>
       </div>
-      <div class="div4">비아 톨레도 파스타바</div>
-      <div class="div5">매장정보</div>
-      <div class="div6">메뉴</div>
-      <div class="div7">리뷰</div>
+      <div class="div4"><%=brandname %></div>
+      <div class="div5"><a href="index_page.jsp?id=<%=id%>">매장정보</a></div>
+      <div class="div6"><a href="detail_menu.jsp?id=<%=id%>">메뉴</a></div>
+      <div class="div7"><a href="inforeview.jsp?id=<%=id%>">리뷰</a></div>
       <div class="div8">예약하기</div>
+      
+      
       <img class="vector-16" src="./inforeview_img/vector-160.svg" />
       <img class="vector-13" src="./inforeview_img/vector-130.svg" />
       <a href="index.jsp">
@@ -139,7 +151,7 @@
       </c:forEach>
        <!-- 리뷰생성 끝 -->
       </div>
-      <button class="div11" onclick="location.href='newinforeview.jsp'">리뷰쓰기</button>
+      <button class="div11" onclick="location.href='newinforeview.jsp?id=<%=id%>'">리뷰쓰기</button>
     </div>
   </div>
   

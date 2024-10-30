@@ -31,6 +31,8 @@
 
         // 저장 후 목록 페이지로 리다이렉트
         response.sendRedirect("Menu.jsp");
+        
+
     }
 %>
 
@@ -70,7 +72,9 @@
             </div>
             <div class="form-group">
                 <label for="brandId">식당 ID:</label>
-                <input type="text" id="brandId" name="brandId" required>
+                <% String id = request.getParameter("id"); %>
+                <input type="hidden" id="brandId" name="brandId" value="<%= id %>" required>
+                <p><%= id %></p>
             </div>
             <div class="form-group">
                 <label for="fileId">파일 ID:</label>

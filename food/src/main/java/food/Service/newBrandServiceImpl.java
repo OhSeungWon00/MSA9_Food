@@ -50,6 +50,25 @@ public class newBrandServiceImpl implements newBrandService{
 			return selectedBrandName;
 	}
 
+
+	@Override
+	public newBrand idsearch(newBrand newbrand) {
+		Long id = newbrand.getBrandId();
+		newBrand selectedBrandName = null;
+		System.out.println(" id : " + id);
+		
+			try {
+				Map<Object, Object> where = new HashMap<Object, Object>();
+				where.put("brand_id", id);
+				selectedBrandName = newbrandDAO.selectBy(where); // pk 출력
+				System.out.println("-- : " + selectedBrandName);
+			} catch (Exception e) {
+				System.out.println("호출오류");
+				e.printStackTrace();
+			}
+			return selectedBrandName;
+	}
+	
 	@Override
 	public int brandUpdate(newBrand newBrand) {
 		int result = 0;
@@ -112,4 +131,5 @@ public class newBrandServiceImpl implements newBrandService{
 		}
         return pageInfo;
 	}
+
 }

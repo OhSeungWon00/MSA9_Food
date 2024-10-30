@@ -7,6 +7,8 @@ CREATE TABLE `Brand` (
 );
 
 
+
+
 SELECT* FROM Brand;
 
 

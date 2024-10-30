@@ -22,9 +22,9 @@
 			<h1>트리드(trid)</h1>
 			<div class="subtitle">
 				<ul>
-					<li onclick="location.href='index_page.jsp'">매장정보</li>
-					<li onclick="location.href='detail_menu.jsp'">메뉴</li>
-					<li onclick="location.href='inforeview.jsp'">리뷰</li>
+					<li onclick="location.href='index_page.jsp?id=2'">매장정보</li>
+					<li onclick="location.href='detail_menu.jsp?id=2'">메뉴</li>
+					<li onclick="location.href='inforeview.jsp?id=2'">리뷰</li>
 				</ul>
 			</div>
 		</div>
