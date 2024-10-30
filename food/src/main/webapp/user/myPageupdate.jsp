@@ -74,7 +74,7 @@ menu, ol, ul {
 					</div>
 					<div class="navigation">
 						<div class="div12">
-							<a href="/food/main.jsp" class="homebtn">홈으로</a>
+							<a href="/food/index.jsp" class="homebtn">홈으로</a>
 						</div>
 
 					</div>
