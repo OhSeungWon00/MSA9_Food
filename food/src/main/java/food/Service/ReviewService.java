@@ -13,7 +13,7 @@ public interface ReviewService {
 	// 전체리뷰 리스트
 	public List<Review> list();
 	// 매장별리뷰 리스트
-	public List<Review> list2();
+	public List<Review> list2(Review review);
 	// 페이징
 	public PageInfo<Review> page(int page);
 	// 리뷰삭제
