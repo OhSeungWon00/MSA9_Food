@@ -60,6 +60,15 @@
 
 
 .div5 {
+<<<<<<< HEAD
+  border-radius: 0px;
+  width: 500px;
+  height: 90px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+=======
 	border-radius: 0px;
 	width: 500px;
 	height: 90px;
@@ -67,6 +76,7 @@
 	left: 470px;
 	top: 528px;
 	overflow: visible;
+>>>>>>> refs/heads/main
 }
 
 .div5:hover{
@@ -97,6 +107,19 @@
 }
 
 .div8 {
+<<<<<<< HEAD
+  color: #7070ff;
+  text-align: center;
+  font-family: "YoungSerif-Regular", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  position: absolute;
+  left: 606px;
+  top: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+=======
 	color: #7070ff;
 	text-align: left;
 	font-family: "YoungSerif-Regular", sans-serif;
@@ -108,6 +131,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+>>>>>>> refs/heads/main
 }
 
 
@@ -123,6 +147,19 @@
 
 
 .div9 {
+<<<<<<< HEAD
+  color: #ffffff;
+  text-align: center;
+  font-family: "YoungSerif-Regular", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  position: absolute;
+  left: 658px;
+  top: 549px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+=======
 	 cursor: pointer;
 	color: #ffffff;
 	text-align: left;
@@ -135,6 +172,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+>>>>>>> refs/heads/main
 }
 
 .div10 {
