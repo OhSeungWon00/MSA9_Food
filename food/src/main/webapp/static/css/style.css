@@ -2,8 +2,7 @@ body{
 	display: grid;
 	margin-top: 130px;
 	place-items: center;
-@charset "UTF-8";
-
+}
 body {
     display: grid;
     margin-top: 130px;
@@ -12,8 +11,6 @@ body {
 }
 
 /* ***************header*************** */
-
-/* ***************headter*************** */
 .header * {
   box-sizing: border-box;
 }

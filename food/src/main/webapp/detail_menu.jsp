@@ -19,7 +19,7 @@
 	<%-- [Contents] ######################################################### --%>
 	<div class="container">
 		<div class="content-title">
-			<h1>트리드(trid)</h1>
+			<h1>디핀 deepin</h1>
 			<div class="subtitle">
 				<ul>
 					<li onclick="location.href='index_page.jsp'">매장정보</li>
@@ -28,28 +28,17 @@
 				</ul>
 			</div>
 		</div>
-		<div class="restaurant-info">
-			<div class="content-img">
-	    		<img src="<%= root %>/static/img/detail_page2.jpg" alt="map">
+		<!-- 메뉴 목록 -->
+		<div class="menu_container">
+			<div class="menu_name">
+				<a>비아톨레도 파스타 가을 7코스 메뉴</a>
 			</div>
-			<div class="content-explain">
-				<div class="restaurant-name">매장소개</div>
-				<div class="explain-restaurant">미쉐린 3스타 레스토랑 출신 흑백요리사 트리플스타 강승원 셰프가 <br>풀어내는 다국적 감성의 컨템포러리 다이닝</div>
+			<div class="menu_explain">
+				<a>가을코스</a>
 			</div>
-			<br>
-			<h2>트리드(trid)</h2>
-			<div class="review">
-				<p>★ 4.8</p>
-				<a>리뷰 703개</a>
+			<div class="menu_price">
+				<a>89,000 - 11,9000 원</a>
 			</div>
-		</div>
-		<div class="content-underLine"></div>
-		<div class="restaurant-location">
-			<h3>위치</h3>
-			<img src="<%= root %>/static/img/map2.jpg" alt="지도 이미지" class="map-image">
-			<br>
-			<img class="map-icon" src="<%= root %>/static/img/map.png" />
-			<a>서울특별시 강남구 선릉로162길 16 2층</a>
 		</div>
 	</div>
 	<%-- [Contents] ######################################################### --%>

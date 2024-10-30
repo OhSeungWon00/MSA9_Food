@@ -53,30 +53,14 @@
 	top: 392px;
 }
 
-
-
-
-
-
-
 .div5 {
-<<<<<<< HEAD
   border-radius: 0px;
   width: 500px;
   height: 90px;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   overflow: visible;
-=======
-	border-radius: 0px;
-	width: 500px;
-	height: 90px;
-	position: absolute;
-	left: 470px;
-	top: 528px;
-	overflow: visible;
->>>>>>> refs/heads/main
 }
 
 .div5:hover{
@@ -107,19 +91,6 @@
 }
 
 .div8 {
-<<<<<<< HEAD
-  color: #7070ff;
-  text-align: center;
-  font-family: "YoungSerif-Regular", sans-serif;
-  font-size: 80px;
-  font-weight: 400;
-  position: absolute;
-  left: 606px;
-  top: 128px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-=======
 	color: #7070ff;
 	text-align: left;
 	font-family: "YoungSerif-Regular", sans-serif;
@@ -131,13 +102,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
->>>>>>> refs/heads/main
 }
-
-
-
-
-
 
 .div9:hover{
 	background: #7070FF;
@@ -147,20 +112,7 @@
 
 
 .div9 {
-<<<<<<< HEAD
-  color: #ffffff;
-  text-align: center;
-  font-family: "YoungSerif-Regular", sans-serif;
-  font-size: 34px;
-  font-weight: 400;
-  position: absolute;
-  left: 658px;
-  top: 549px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-=======
-	 cursor: pointer;
+	cursor: pointer;
 	color: #ffffff;
 	text-align: left;
 	font-family: "YoungSerif-Regular", sans-serif;
@@ -172,7 +124,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
->>>>>>> refs/heads/main
 }
 
 .div10 {
@@ -223,7 +174,6 @@
 
 
 .div13 {
-
 	color: #000000;
 	text-align: left;
 	font-family: "YoungSerif-Regular", sans-serif;
@@ -237,8 +187,6 @@
 	justify-content: flex-start;
 }
 
-
-
 .div14:hover{
 	background: #7070FF;
 	color: white;	
@@ -250,8 +198,6 @@
 	color: white;
 	 cursor: pointer;	
 }
-
-
 
 .div14 {
 	color: #000000;

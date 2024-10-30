@@ -3,9 +3,6 @@
   box-sizing: border-box;
 }
 
-
-
-
 .div {
   height: 987px;
   position: relative;
@@ -713,8 +710,6 @@
   align-items: center;
   justify-content: flex-start;
 }
-
-
 .div11 {
   border-radius: 17px;
   border-style: solid;

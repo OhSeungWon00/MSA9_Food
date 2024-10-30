@@ -19,11 +19,12 @@
 	<%-- [Contents] ######################################################### --%>
 	<div class="container">
 		<div class="content-title">
-			<h1>← 비아 톨레도 파스타바</h1>
+			<h1>비아 톨레도 파스타바</h1>
 			<div class="subtitle">
 				<ul>
 					<li>매장정보</li>
 					<li>메뉴</li>
+					<li>리뷰</li>
 				</ul>
 			</div>
 		</div>
