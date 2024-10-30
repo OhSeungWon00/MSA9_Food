@@ -68,10 +68,21 @@ public class ReviewServiceImpl implements ReviewService{
 	}
 
 	@Override
-	public List<Review> list2() {
-		Review reviewName = new Review();
-		String Name = reviewName.getName();
-		return null;
+	public List<Review> list2(Review review) {
+		String name = review.getName();
+		List<Review> listby = null;
+		System.out.println("name : " + name);
+		System.out.println("listby : " + listby);
+		
+		try {
+			Map<Object, Object> where = new HashMap<Object, Object>();
+			where.put("name", name);
+			listby = reviewDAO.listBy(where);
+		} catch (Exception e) {
+			System.out.println("리스트오류");
+			e.printStackTrace();
+		}
+		return listby;
 	}
 
 }

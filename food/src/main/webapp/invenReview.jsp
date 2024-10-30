@@ -104,8 +104,8 @@ List<Review> reviewList = pageInfo.getList();
                 <div class="div5">매장명</div>
                 <div class="div6">내용</div>
                 <div class="div7">작성일자</div>
-                <div class="div8">평점</div>
-                <div class="div9">삭제</div>
+                <div class="div8">삭제</div>
+                <div class="div9">평점</div>
                 <img class="vector-1" src="./invenBrand_img/vector-10.svg" />
                 
                 <!-- 리스트 생성 -->
@@ -120,7 +120,7 @@ List<Review> reviewList = pageInfo.getList();
                                 <div class="div12">${review.name}</div>
                                 <div class="_010-1111-1234">${review.regdate}</div>
                                 <div class="_123-123">${review.content}</div>
-                                <div class="rectangle-40">${review.rating }</div>
+                                <div style="width: 69px; height: 30px; position: absolute; left: 843px;">${review.rating }</div>
                                 <input class="rectangle-39" type="submit" value="삭제"/>
                             </div>
                         </form>

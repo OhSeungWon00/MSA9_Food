@@ -19,4 +19,7 @@ public interface MenuService {
 	
 	// 메뉴 삭제
 	int delete(Long menuId);
+
+	// 가게별 게시글 목록
+	List<Menu> list2(Menu menu);
 }
