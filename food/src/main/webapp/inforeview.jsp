@@ -12,7 +12,11 @@
 <%
 	String root = request.getContextPath();
 	ReviewService reviewService = new ReviewServiceImpl();
-	List<Review> reviewList = reviewService.list();
+	String name = "임시가게2";
+	Review review = Review.builder()
+						.name(name)
+						.build();
+	List<Review> reviewList = reviewService.list2(review);
 	System.out.println(reviewList);
 %>
 <!DOCTYPE html>

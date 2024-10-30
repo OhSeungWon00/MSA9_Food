@@ -12,7 +12,7 @@ public interface ReviewService {
 	public int newreview(Review review);
 	// 전체리뷰 리스트
 	public List<Review> list();
-	// 전체리뷰 리스트
+	// 매장별리뷰 리스트
 	public List<Review> list2();
 	// 페이징
 	public PageInfo<Review> page(int page);
