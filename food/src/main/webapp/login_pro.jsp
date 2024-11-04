@@ -30,6 +30,7 @@
 	// 로그인 성공
 	session.setAttribute("loginId", userId);
 	session.setAttribute("user", loginUser);
+	
 	// 메인 화면으로 이동
 		if(userId.equals("123")){
 			response.sendRedirect("index.jsp?login=2");
