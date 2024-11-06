@@ -14,8 +14,6 @@
   <link rel="stylesheet" href="./css/brand_info_review2.css">
   
 
-
-  
   
   <style>
    a,
