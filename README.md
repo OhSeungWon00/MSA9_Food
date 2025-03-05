@@ -4,8 +4,8 @@
 
 ---
 
-## 🎥 **프로젝트 발표 영상**  
-[**발표 영상 링크**](https://www.youtube.com/watch?v=93iPotL9LME)
+## 🎥 **프로젝트 PPT**  
+[**프로젝트 PPT 링크**](https://docs.google.com/presentation/d/14VhvWuerdmPXfFr8rohYgrdhctHbqJXZ/edit#slide=id.p1)
 
 ---
 
