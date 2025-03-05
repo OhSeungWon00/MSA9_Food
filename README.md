@@ -4,7 +4,7 @@
 
 ---
 
-## 🎥 **프로젝트 PPT**  
+## 📝 **프로젝트 PPT**  
 [**프로젝트 PPT 링크**](https://docs.google.com/presentation/d/14VhvWuerdmPXfFr8rohYgrdhctHbqJXZ/edit#slide=id.p1)
 
 ---
